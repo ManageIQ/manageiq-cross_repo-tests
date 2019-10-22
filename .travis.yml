@@ -1,0 +1,16 @@
+dist: xenial
+language: ruby
+rvm:
+- 2.5.5
+cache:
+  bundler: true
+addons:
+  postgresql: '10'
+script: bundle exec manageiq-cross_repo
+matrix:
+  fast_finish: true
+env:
+  global:
+  - TEST_REPO=
+  - CORE_REPO=
+  - GEM_REPOS=
