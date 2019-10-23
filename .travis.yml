@@ -11,5 +11,5 @@ matrix:
   fast_finish: true
 env:
   global:
-  - TEST_REPO=manageiq-providers-vmware
-  - CORE_REPO=manageiq@19401
+  - TEST_REPO=manageiq-providers-vmware#463
+  - CORE_REPO=manageiq#19401
