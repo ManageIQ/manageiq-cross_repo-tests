@@ -14,6 +14,10 @@ matrix:
   fast_finish: true
 env:
   global:
-  - TEST_REPO=
-  - CORE_REPO=
-  - GEM_REPOS=
+  - CORE_REPO=manageiq#19436
+  - GEM_REPOS=manageiq-providers-amazon#569,manageiq-gems-pending#451
+  matrix:
+  - TEST_REPO=manageiq#19436
+  - TEST_REPO=manageiq-providers-amazon#569
+  - TEST_REPO=manageiq-gems-pending#451
+
