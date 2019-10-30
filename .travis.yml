@@ -15,7 +15,7 @@ matrix:
 env:
   global:
   - CORE_REPO=manageiq#19429
-  - GEM_REPOS=manageiq-schema#425,manageiq-providers-kubevirt#150,manageiq-providers-openstack#518,manageiq-providers-ovirt#418,manageiq-providers-scvmm#137,manageiq-providers-vmware#464
+  - GEM_REPOS=manageiq-schema#425,manageiq-providers-kubevirt#150,manageiq-providers-openstack#518,manageiq-providers-ovirt#418,manageiq-providers-scvmm#137,manageiq-providers-vmware#464,manageiq-v2v#1056
   matrix:
   - TEST_REPO=manageiq#19429
   - TEST_REPO=manageiq-providers-kubevirt#150
@@ -25,3 +25,4 @@ env:
   - TEST_REPO=manageiq-providers-vmware#464
   - TEST_REPO=manageiq-api
   - TEST_REPO=manageiq-ui-classic#6339
+  - TEST_REPO=manageiq-v2v#1056
