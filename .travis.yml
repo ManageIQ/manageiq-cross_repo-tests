@@ -14,6 +14,13 @@ matrix:
   fast_finish: true
 env:
   global:
-  - TEST_REPO=
-  - CORE_REPO=
-  - GEM_REPOS=
+  - CORE_REPO=manageiq#19452
+  - GEM_REPOS=manageiq-providers-amazon#571,manageiq-providers-azure#361,manageiq-providers-google#113,manageiq-providers-ovirt#422,manageiq-providers-scvmm#139,manageiq-providers-vmware#470
+  matrix:
+  - TEST_REPO=manageiq#19452
+  - TEST_REPO=manageiq-providers-amazon#571
+  - TEST_REPO=manageiq-providers-azure#361
+  - TEST_REPO=manageiq-providers-google#113
+  - TEST_REPO=manageiq-providers-ovirt#422
+  - TEST_REPO=manageiq-providers-scvmm#139
+  - TEST_REPO=manageiq-providers-vmware#470
