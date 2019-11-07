@@ -14,6 +14,5 @@ matrix:
   fast_finish: true
 env:
   global:
-  - TEST_REPO=
-  - CORE_REPO=
-  - GEM_REPOS=
+  - TEST_REPO=https://github.com/ManageIQ/manageiq/pull/19477
+  - GEM_REPOS=https://github.com/ManageIQ/manageiq-providers-kubernetes/pull/346,https://github.com/ManageIQ/manageiq-providers-openshift/pull/152
