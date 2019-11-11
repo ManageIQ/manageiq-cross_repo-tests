@@ -14,6 +14,14 @@ matrix:
   fast_finish: true
 env:
   global:
-  - TEST_REPO=
-  - CORE_REPO=
-  - GEM_REPOS=
+  - CORE_REPO=manageiq
+  - GEM_REPOS=manageiq-api#709
+  matrix:
+  - TEST_REPO=manageiq
+  - TEST_REPO=manageiq-api#709
+  - TEST_REPO=manageiq-content
+  - TEST_REPO=manageiq-providers-azure
+  - TEST_REPO=manageiq-schema
+  - TEST_REPO=manageiq-ui-classic
+  - TEST_REPO=manageiq-v2v
+  - TEST_REPO=RedHatCloudForms/cfme-cloud_services
