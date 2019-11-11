@@ -22,3 +22,4 @@ env:
   - TEST_REPO=manageiq-providers-vmware
   - TEST_REPO=manageiq-providers-ovirt
   - TEST_REPO=manageiq-providers-azure
+  - TEST_REPO=manageiq-providers-kubernetes
