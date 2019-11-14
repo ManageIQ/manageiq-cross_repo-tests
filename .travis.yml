@@ -14,6 +14,22 @@ matrix:
   fast_finish: true
 env:
   global:
-  - TEST_REPO=
-  - CORE_REPO=
-  - GEM_REPOS=
+  - CORE_REPO=manageiq#19516
+  - GEM_REPOS=https://github.com/ManageIQ/manageiq-providers-nuage/pull/196,https://github.com/ManageIQ/manageiq-providers-amazon/pull/576,https://github.com/ManageIQ/manageiq-providers-ansible_tower/pull/207,https://github.com/ManageIQ/manageiq-providers-azure/pull/368,https://github.com/ManageIQ/manageiq-providers-azure_stack/pull/22,https://github.com/ManageIQ/manageiq-providers-foreman/pull/53,https://github.com/ManageIQ/manageiq-providers-google/pull/118,https://github.com/ManageIQ/manageiq-providers-kubernetes/pull/350,https://github.com/ManageIQ/manageiq-providers-lenovo/pull/289,https://github.com/ManageIQ/manageiq-providers-openshift/pull/156,https://github.com/ManageIQ/manageiq-providers-openstack/pull/537,https://github.com/ManageIQ/manageiq-providers-ovirt/pull/431,https://github.com/ManageIQ/manageiq-providers-redfish/pull/101,https://github.com/ManageIQ/manageiq-providers-scvmm/pull/148
+  matrix:
+  - TEST_REPO=manageiq#19516
+  - TEST_REPO=https://github.com/ManageIQ/manageiq-providers-nuage/pull/196
+  - TEST_REPO=https://github.com/ManageIQ/manageiq-providers-amazon/pull/576
+  - TEST_REPO=https://github.com/ManageIQ/manageiq-providers-ansible_tower/pull/207
+  - TEST_REPO=https://github.com/ManageIQ/manageiq-providers-azure/pull/368
+  - TEST_REPO=https://github.com/ManageIQ/manageiq-providers-azure_stack/pull/22
+  - TEST_REPO=https://github.com/ManageIQ/manageiq-providers-foreman/pull/53
+  - TEST_REPO=https://github.com/ManageIQ/manageiq-providers-google/pull/118
+  - TEST_REPO=https://github.com/ManageIQ/manageiq-providers-kubernetes/pull/350
+  - TEST_REPO=https://github.com/ManageIQ/manageiq-providers-lenovo/pull/289
+  - TEST_REPO=https://github.com/ManageIQ/manageiq-providers-openshift/pull/156
+  - TEST_REPO=https://github.com/ManageIQ/manageiq-providers-openstack/pull/537
+  - TEST_REPO=https://github.com/ManageIQ/manageiq-providers-ovirt/pull/431
+  - TEST_REPO=https://github.com/ManageIQ/manageiq-providers-redfish/pull/101
+  - TEST_REPO=https://github.com/ManageIQ/manageiq-providers-scvmm/pull/148
+  - TEST_REPO=manageiq-ui-classic
