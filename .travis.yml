@@ -21,3 +21,5 @@ env:
   - TEST_REPO=manageiq-providers-vmware#480
   - TEST_REPO=manageiq-providers-ovirt#437
   - TEST_REPO=manageiq-providers-scvmm#149
+  - TEST_REPO=manageiq-ui-classic
+  - TEST_REPO=manageiq-api
