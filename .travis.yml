@@ -14,6 +14,7 @@ matrix:
   fast_finish: true
 env:
   global:
-  - TEST_REPO=
   - CORE_REPO=
   - GEM_REPOS=
+  matrix:
+  - TEST_REPO=
