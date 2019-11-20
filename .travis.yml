@@ -14,7 +14,8 @@ matrix:
   fast_finish: true
 env:
   global:
-  - CORE_REPO=
-  - GEM_REPOS=
+  - CORE_REPO=manageiq#19539
+  - GEM_REPOS=manageiq-providers-vmware#483
   matrix:
-  - TEST_REPO=
+  - TEST_REPO=manageiq#19539
+  - TEST_REPO=manageiq-providers-vmware#483
