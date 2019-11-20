@@ -16,29 +16,30 @@ For more information about the variables or more examples, refer to the
 #### Testing a single repo in the context of ManageIQ PR 12345
 
 ```diff
-@@ -11,6 +11,5 @@ matrix:
+@@ -14,7 +14,7 @@ matrix:
    fast_finish: true
  env:
    global:
--  - TEST_REPO=
 -  - CORE_REPO=
--  - GEM_REPOS=
-+  - TEST_REPO=manageiq-ui-classic
 +  - CORE_REPO=manageiq@12345
+   - GEM_REPOS=
+   matrix:
+-  - TEST_REPO=
++  - TEST_REPO=manageiq-ui-classic
 ```
 
 #### Testing multiple repos in the context of ManageIQ PR 12345
 
 ```diff
-@@ -11,6 +11,7 @@ matrix:
+@@ -14,7 +14,8 @@ matrix:
    fast_finish: true
  env:
    global:
--  - TEST_REPO=
 -  - CORE_REPO=
--  - GEM_REPOS=
 +  - CORE_REPO=manageiq@12345
-+  matrix:
+   - GEM_REPOS=
+   matrix:
+-  - TEST_REPO=
 +  - TEST_REPO=manageiq-ui-classic
 +  - TEST_REPO=manageiq-api
 ```
