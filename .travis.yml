@@ -14,7 +14,32 @@ matrix:
   fast_finish: true
 env:
   global:
-  - CORE_REPO=
+  - CORE_REPO=manageiq#19537
   - GEM_REPOS=
   matrix:
-  - TEST_REPO=
+  - TEST_REPO=manageiq-api
+  - TEST_REPO=manageiq-automation_engine
+  - TEST_REPO=manageiq-consumption
+  - TEST_REPO=manageiq-content
+  - TEST_REPO=manageiq-decorators
+  - TEST_REPO=manageiq-gems-pending
+  - TEST_REPO=manageiq-graphql
+  - TEST_REPO=manageiq-providers-amazon
+  - TEST_REPO=manageiq-providers-ansible_tower
+  - TEST_REPO=manageiq-providers-azure
+  - TEST_REPO=manageiq-providers-azure_stack
+  - TEST_REPO=manageiq-providers-foreman
+  - TEST_REPO=manageiq-providers-google
+  - TEST_REPO=manageiq-providers-kubernetes
+  - TEST_REPO=manageiq-providers-kubevirt
+  - TEST_REPO=manageiq-providers-lenovo
+  - TEST_REPO=manageiq-providers-nuage
+  - TEST_REPO=manageiq-providers-openshift
+  - TEST_REPO=manageiq-providers-openstack
+  - TEST_REPO=manageiq-providers-ovirt
+  - TEST_REPO=manageiq-providers-redfish
+  - TEST_REPO=manageiq-providers-scvmm
+  - TEST_REPO=manageiq-providers-vmware
+  - TEST_REPO=manageiq-schema
+  - TEST_REPO=manageiq-ui-classic
+  - TEST_REPO=manageiq-v2v
