@@ -14,7 +14,8 @@ matrix:
   fast_finish: true
 env:
   global:
-  - CORE_REPO=
-  - GEM_REPOS=
+  - CORE_REPO=agrare/manageiq@use_bundle_config_local_for_cross_repo_cache
+  - GEM_REPOS=manageiq-providers-vmware,manageiq-providers-amazon
   matrix:
-  - TEST_REPO=
+  - TEST_REPO=agrare/manageiq@use_bundle_config_local_for_cross_repo_cache
+  - TEST_REPO=manageiq-providers-vmware
