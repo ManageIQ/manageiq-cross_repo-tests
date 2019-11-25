@@ -14,7 +14,8 @@ matrix:
   fast_finish: true
 env:
   global:
-  - CORE_REPO=
-  - GEM_REPOS=
+  - CORE_REPO=https://github.com/ManageIQ/manageiq/pull/19551
+  - GEM_REPOS=https://github.com/ManageIQ/manageiq-providers-vmware/pull/485
   matrix:
-  - TEST_REPO=
+  - TEST_REPO=manageiq-ui-classic
+  - TEST_REPO=manageiq-api
