@@ -19,7 +19,7 @@ env:
   - TEST_REPO=manageiq
   - TEST_REPO=manageiq-api
   - TEST_REPO=manageiq-ui-classic
-  - TEST_REPO=manageiq-ui-openshift
-  - TEST_REPO=manageiq-ui-kubernetes
-  - TEST_REPO=manageiq-ui-amazon
+  - TEST_REPO=manageiq-openshift
+  - TEST_REPO=manageiq-kubernetes
+  - TEST_REPO=manageiq-amazon
   - TEST_REPO=manageiq-gems-pending
