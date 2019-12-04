@@ -20,7 +20,7 @@ For more information about the variables or more examples, refer to the
  env:
    global:
 -  - REPOS=
-+  - REPOS=manageiq@12345
++  - REPOS=manageiq#12345
    matrix:
 -  - TEST_REPO=
 +  - TEST_REPO=manageiq-ui-classic
@@ -34,7 +34,7 @@ For more information about the variables or more examples, refer to the
  env:
    global:
 -  - REPOS=
-+  - REPOS=manageiq@12345
++  - REPOS=manageiq#12345
    matrix:
 -  - TEST_REPO=
 +  - TEST_REPO=manageiq-ui-classic
