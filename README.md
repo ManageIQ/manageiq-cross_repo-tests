@@ -20,7 +20,7 @@ For more information about the variables or more examples, refer to the
  env:
    global:
 -  - REPOS=
-+  - REPOS=manageiq@12345
++  - REPOS=manageiq#12345
    matrix:
 -  - TEST_REPO=
 +  - TEST_REPO=manageiq-ui-classic
@@ -34,12 +34,29 @@ For more information about the variables or more examples, refer to the
  env:
    global:
 -  - REPOS=
-+  - REPOS=manageiq@12345
++  - REPOS=manageiq#12345
    matrix:
 -  - TEST_REPO=
 +  - TEST_REPO=manageiq-ui-classic
 +  - TEST_REPO=manageiq-api
 ```
+
+#### Testing multiple repos in the context of ManageIQ branch "gaprindashvili"
+
+```diff
+@@ -14,6 +14,7 @@ matrix:
+   fast_finish: true
+ env:
+   global:
+-  - REPOS=
++  - REPOS=manageiq@gaprindashvili
+   matrix:
+-  - TEST_REPO=
++  - TEST_REPO=manageiq-ui-classic
++  - TEST_REPO=manageiq-api
+```
+
+`Same syntax is used for tags`
 
 ## License
 
