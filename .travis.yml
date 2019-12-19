@@ -14,6 +14,16 @@ matrix:
   fast_finish: true
 env:
   global:
-  - REPOS=
+  - REPOS=manageiq#19521
   matrix:
-  - TEST_REPO=manageiq
+  - TEST_REPO=manageiq#19521
+  - TEST_REPO=manageiq-api
+  - TEST_REPO=manageiq-providers-amazon
+  - TEST_REPO=manageiq-providers-azure
+  - TEST_REPO=manageiq-providers-openstack
+  - TEST_REPO=manageiq-providers-openshift
+  - TEST_REPO=manageiq-providers-ovirt
+  - TEST_REPO=manageiq-providers-scvmm
+  - TEST_REPO=manageiq-providers-vmware
+  - TEST_REPO=manageiq-ui-classic
+  - TEST_REPO=manageiq-v2v
