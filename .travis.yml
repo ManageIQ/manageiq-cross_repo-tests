@@ -17,4 +17,4 @@ env:
   - REPOS=manageiq-gems-pending#454,NickLaMuro/manageiq@reinject_mount_and_ftp_libs_grafted
   matrix:
   - TEST_REPO=NickLaMuro/manageiq@reinject_mount_and_ftp_libs_grafted
-  - TEST_REPO=ManageIQ/manageiq-smartstate
+  - TEST_REPO=ManageIQ/manageiq-smartstate#107
