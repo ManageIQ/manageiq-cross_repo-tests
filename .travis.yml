@@ -14,6 +14,6 @@ matrix:
   fast_finish: true
 env:
   global:
-  - REPOS=
+  - REPOS=d-m-u/xclarity_client
   matrix:
-  - TEST_REPO=manageiq
+  - TEST_REPO=manageiq-providers-lenovo
