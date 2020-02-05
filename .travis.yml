@@ -14,6 +14,6 @@ matrix:
   fast_finish: true
 env:
   global:
-  - REPOS=
+  - REPOS=d-m-u/ansible_tower_client_ruby@adding_saner_limits_to_faraday_version d-m-u/manageiq-api-client@updating_faraday
   matrix:
-  - TEST_REPO=manageiq
+  - TEST_REPO=manageiq-providers-ansible_tower
