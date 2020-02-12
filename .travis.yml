@@ -15,6 +15,7 @@ matrix:
 env:
   global:
   - REPOS=manageiq-gems-pending#458
+  - REPOS=manageiq#19767
   matrix:
   - TEST_REPO=manageiq#19767
   - TEST_REPO=manageiq-api
