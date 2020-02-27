@@ -14,10 +14,10 @@ matrix:
   fast_finish: true
 env:
   global:
-  - REPOS=jrafanie/manageiq@move_field_visibility_services_to_core
+  - REPOS=jrafanie/manageiq@move_widget_import_service_to_core
   matrix:
-  - TEST_REPO=jrafanie/manageiq@move_field_visibility_services_to_core
-  - TEST_REPO=jrafanie/manageiq-ui-classic@move_field_visibility_services_to_core
+  - TEST_REPO=jrafanie/manageiq@move_widget_import_service_to_core
+  - TEST_REPO=jrafanie/manageiq-ui-classic@move_widget_import_service_to_core
   - TEST_REPO=manageiq-api
   - TEST_REPO=manageiq-automation_engine
   - TEST_REPO=manageiq-content
