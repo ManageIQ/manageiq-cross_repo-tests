@@ -19,3 +19,10 @@ env:
   - TEST_REPO=manageiq-ui-classic
   - TEST_REPO=manageiq-api
   - TEST_REPO=manageiq-automation_engine
+  - TEST_REPO=manageiq-providers-amazon
+  - TEST_REPO=manageiq-providers-azure
+  - TEST_REPO=manageiq-providers-vmware
+  - TEST_REPO=manageiq-providers-ovirt
+  - TEST_REPO=manageiq-providers-openstack
+  - TEST_REPO=manageiq-providers-scvmm
+  - TEST_REPO=manageiq-providers-kubernetes
