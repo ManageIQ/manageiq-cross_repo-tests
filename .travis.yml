@@ -19,10 +19,10 @@ env:
   matrix:
   - TEST_REPO=manageiq-schema#314
   - TEST_REPO=manageiq#18165
-  - TEST_REPO=manageiq-api
+  - TEST_REPO=manageiq-api#770
+  - TEST_REPO=manageiq-ui-classic#6742
   - TEST_REPO=manageiq-automation_engine
   - TEST_REPO=manageiq-content
-  - TEST_REPO=manageiq-ui-classic
   - TEST_REPO=manageiq-providers-amazon
   - TEST_REPO=manageiq-providers-ansible_tower
   - TEST_REPO=manageiq-providers-azure
