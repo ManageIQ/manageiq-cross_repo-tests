@@ -14,8 +14,8 @@ matrix:
   fast_finish: true
 env:
   global:
-  - REPOS=manageiq#19865,manageiq-api#772
+  - REPOS=manageiq#19936,manageiq-api#772
   matrix:
-  - TEST_REPO=manageiq#19865
+  - TEST_REPO=manageiq#19936
   - TEST_REPO=manageiq-api#772
   - TEST_REPO=manageiq-ui-classic
