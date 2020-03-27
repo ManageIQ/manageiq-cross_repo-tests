@@ -18,5 +18,5 @@ env:
   matrix:
   - TEST_REPO=manageiq#20018
   - TEST_REPO=manageiq-api
-  - TEST_REPO=manageiq-providers-nuage
+  - TEST_REPO=manageiq-providers-vmware
   - TEST_REPO=manageiq-ui-classic#6802
