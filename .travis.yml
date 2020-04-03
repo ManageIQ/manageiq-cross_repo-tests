@@ -14,6 +14,17 @@ matrix:
   fast_finish: true
 env:
   global:
-  - REPOS=
+  - REPOS=manageiq#20039,manageiq-providers-amazon#616,manageiq-providers-azure#389,manageiq-providers-ansible_tower#217,manageiq-providers-google#128,manageiq-providers-openshift#163,manageiq-providers-openstack#577,manageiq-providers-ovirt#492,manageiq-providers-scvmm#156,manageiq-providers-vmware#568,https://github.com/ManageIQ/manageiq-ui-classic/pull/6822
   matrix:
-  - TEST_REPO=manageiq
+  - TEST_REPO=manageiq#20039
+  - TEST_REPO=manageiq-providers-amazon#616
+  - TEST_REPO=manageiq-providers-azure#389
+  - TEST_REPO=manageiq-providers-ansible_tower#217
+  - TEST_REPO=manageiq-providers-google#128
+  - TEST_REPO=manageiq-providers-openshift#163
+  - TEST_REPO=manageiq-providers-openstack#577
+  - TEST_REPO=manageiq-providers-ovirt#492
+  - TEST_REPO=manageiq-providers-scvmm#156
+  - TEST_REPO=manageiq-providers-vmware#568
+  - TEST_REPO=manageiq-ui-classic#6822
+  - TEST_REPO=manageiq-api
