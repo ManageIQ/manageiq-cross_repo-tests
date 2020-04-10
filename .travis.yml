@@ -14,6 +14,7 @@ matrix:
   fast_finish: true
 env:
   global:
-  - REPOS=
+  - REPOS=manageiq@jansa,manageiq-providers-openshift#166,manageiq-providers-kubernetes#367
   matrix:
-  - TEST_REPO=manageiq
+  - TEST_REPO=manageiq-providers-openshift#166
+  - TEST_REPO=manageiq-providers-kubernetes#367
