@@ -1,6 +1,6 @@
 language: ruby
 rvm:
-- 2.5.5
+- 2.7.1
 cache: bundler
 addons:
   postgresql: '10'
@@ -15,6 +15,27 @@ branches:
   - master
 env:
   global:
-  - REPOS=
+  - REPOS=agrare/manageiq@ruby_2_7
   matrix:
-  - TEST_REPO=manageiq
+  - TEST_REPO=agrare/manageiq@ruby_2_7
+  - TEST_REPO=manageiq-api
+  - TEST_REPO=manageiq-automation_engine
+  - TEST_REPO=manageiq-content
+  - TEST_REPO=manageiq-gems-pending
+  - TEST_REPO=manageiq-schema
+  - TEST_REPO=manageiq-ui-classic
+  - TEST_REPO=manageiq-providers-amazon
+  - TEST_REPO=manageiq-providers-ansible_tower
+  - TEST_REPO=manageiq-providers-azure
+  - TEST_REPO=manageiq-providers-foreman
+  - TEST_REPO=manageiq-providers-google
+  - TEST_REPO=manageiq-providers-kubernetes
+  - TEST_REPO=manageiq-providers-kubevirt
+  - TEST_REPO=manageiq-providers-lenovo
+  - TEST_REPO=manageiq-providers-nuage
+  - TEST_REPO=manageiq-providers-openshift
+  - TEST_REPO=manageiq-providers-openstack
+  - TEST_REPO=manageiq-providers-ovirt
+  - TEST_REPO=manageiq-providers-redfish
+  - TEST_REPO=manageiq-providers-scvmm
+  - TEST_REPO=manageiq-providers-vmware
