@@ -19,7 +19,6 @@ env:
   - TEST_REPO=manageiq
   - TEST_REPO=manageiq-api
   - TEST_REPO=manageiq-automation_engine
-  - TEST_REPO=manageiq-release
   - TEST_REPO=manageiq-ui-classic
   - TEST_REPO=manageiq-smartstate
   - TEST_REPO=manageiq-providers-ansible_tower
@@ -30,4 +29,3 @@ env:
   - TEST_REPO=manageiq-providers-nuage
   - TEST_REPO=manageiq-providers-openshift
   - TEST_REPO=manageiq-providers-vmware
-  - TEST_REPO=more_core_extensions
