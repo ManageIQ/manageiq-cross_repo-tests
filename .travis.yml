@@ -15,5 +15,8 @@ matrix:
 env:
   global:
   - REPOS=
+  - REPOS=manageiq#20173,manageiq-providers-azure#395,manageiq-smartstate#128
   matrix:
-  - TEST_REPO=manageiq
+  - TEST_REPO=manageiq#20173
+  - TEST_REPO=manageiq-providers-azure#395
+  - TEST_REPO=manageiq-smartstate#128
