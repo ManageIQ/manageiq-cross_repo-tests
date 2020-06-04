@@ -17,15 +17,14 @@ env:
   - REPOS=manageiq#20246
   - REPOS=manageiq-api#855
   - REPOS=manageiq-content#660
-  - REPOS=manageiq-providers-ovirt#499
   - REPOS=manageiq-providers-openstack#605
+  - REPOS=manageiq-providers-ovirt#499
   - REPOS=manageiq-providers-vmware#587
   - REPOS=manageiq-schema#490
   matrix:
-  - TEST_REPO=manageiq
   - TEST_REPO=manageiq-api
   - TEST_REPO=manageiq-content
-  - TEST_REPO=manageiq-providers-ovirt
   - TEST_REPO=manageiq-providers-openstack
+  - TEST_REPO=manageiq-providers-ovirt
   - TEST_REPO=manageiq-providers-vmware
   - TEST_REPO=manageiq-schema
