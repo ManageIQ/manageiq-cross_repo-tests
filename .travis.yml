@@ -14,13 +14,7 @@ matrix:
   fast_finish: true
 env:
   global:
-  - REPOS=manageiq#20246
-  - REPOS=manageiq-api#855
-  - REPOS=manageiq-content#660
-  - REPOS=manageiq-providers-openstack#605
-  - REPOS=manageiq-providers-ovirt#499
-  - REPOS=manageiq-providers-vmware#587
-  - REPOS=manageiq-schema#490
+  - REPOS=manageiq#20246,manageiq-api#855,manageiq-content#660,manageiq-providers-openstack#605,manageiq-providers-ovirt#499,manageiq-providers-vmware#587,manageiq-schema#490
   matrix:
   - TEST_REPO=manageiq-api
   - TEST_REPO=manageiq-content
