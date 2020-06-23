@@ -22,7 +22,7 @@ env:
   - TEST_REPO=https://github.com/ManageIQ/manageiq-providers-amazon/pull/632
   - TEST_REPO=https://github.com/ManageIQ/manageiq-providers-vmware/pull/595
   - TEST_REPO=manageiq-providers-ansible_tower
-  - TEST_REPO=manageiq-providers-azure_stack
+  - TEST_REPO=https://github.com/ManageIQ/manageiq-providers-azure_stack/pull/34
   - TEST_REPO=manageiq-providers-foreman
   - TEST_REPO=manageiq-providers-google
   - TEST_REPO=manageiq-providers-kubernetes
