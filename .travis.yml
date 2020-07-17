@@ -16,4 +16,4 @@ env:
   global:
   - REPOS=ManageIQ/manageiq/pull/20350,ManageIQ/manageiq-ui-classic/pull/7201
   matrix:
-  - TEST_REPO=ManageIQ/manageiq-ui-classic/pull/7201 TEST_SUITE=spec:cypress SCRIPT_CMD="source tools/ci/before_script.sh && bundle exec rake -T spec && bundle exec rake spec:cypress"
+  - TEST_REPO=ManageIQ/manageiq-ui-classic/pull/7201 TEST_SUITE=spec:cypress SCRIPT_CMD="TEST_SUITE=spec:cypress bash -l tools/ci/before_script.sh && bundle exec rake -T spec && bundle exec rake spec:cypress"
