@@ -16,4 +16,4 @@ env:
   global:
   - REPOS=ManageIQ/manageiq#20350,ManageIQ/manageiq-ui-classic#7201 SKIP_TEST_RESET=true 
   matrix:
-    - TEST_REPO=ManageIQ/manageiq-ui-classic#7201 TEST_SUITE=spec:cypress SCRIPT_CMD="echo '>>>>> npm install...' && npm install -g yarn && echo '>>>>> bundle exec update...' && bundle exec rake update:ui app:cypress:ui:seed && bundle exec rake -T spec && echo '>>>>> running specs...' && bundle exec rake spec:cypress"
+    - TEST_REPO=ManageIQ/manageiq-ui-classic#7201 TEST_SUITE=spec:cypress SCRIPT_CMD="nvm install 12 && echo '>>>>> npm install...' && npm install -g yarn && echo '>>>>> bundle exec update:ui/seed...' && bundle exec rake update:ui app:cypress:ui:seed && bundle exec rake -T spec && echo '>>>>> running specs...' && bundle exec rake spec:cypress"
