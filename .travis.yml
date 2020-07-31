@@ -9,7 +9,7 @@ addons:
   apt:
     packages:
     - libarchive-dev
-script: bundle exec manageiq-cross_repo
+script: which nvm && echo "\n\n\n\n" && bundle exec manageiq-cross_repo
 matrix:
   fast_finish: true
 env:
