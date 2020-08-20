@@ -15,41 +15,25 @@ branches:
   - master
 env:
   global:
-  - REPOS=
+  - REPOS=manageiq#20508
   matrix:
-  - TEST_REPO=manageiq
-
-# Convenience list of repos for copy/paste
-#
-# manageiq-api
-# manageiq-automation_engine
-# manageiq-consumption
-# manageiq-content
-# manageiq-decorators
-# manageiq-gems-pending
-# manageiq-graphql
-# manageiq-schema
-# manageiq-ui-classic
-# manageiq-ui-service
-# manageiq-v2v
-#
-# manageiq-providers-amazon
-# manageiq-providers-ansible_tower
-# manageiq-providers-autosde
-# manageiq-providers-azure
-# manageiq-providers-azure_stack
-# manageiq-providers-foreman
-# manageiq-providers-google
-# manageiq-providers-ibm_cloud
-# manageiq-providers-ibm_terraform
-# manageiq-providers-kubernetes
-# manageiq-providers-kubevirt
-# manageiq-providers-lenovo
-# manageiq-providers-nsxt
-# manageiq-providers-nuage
-# manageiq-providers-openshift
-# manageiq-providers-openstack
-# manageiq-providers-ovirt
-# manageiq-providers-redfish
-# manageiq-providers-scvmm
-# manageiq-providers-vmware
+  - TEST_REPO=manageiq#20508
+  - TEST_REPO=manageiq-providers-amazon
+  - TEST_REPO=manageiq-providers-ansible_tower
+  - TEST_REPO=manageiq-providers-azure
+  - TEST_REPO=manageiq-providers-azure_stack
+  - TEST_REPO=manageiq-providers-foreman
+  - TEST_REPO=manageiq-providers-google
+  - TEST_REPO=manageiq-providers-kubernetes
+  - TEST_REPO=manageiq-providers-kubevirt
+  - TEST_REPO=manageiq-providers-lenovo
+  - TEST_REPO=manageiq-providers-nsxt
+  - TEST_REPO=manageiq-providers-nuage
+  - TEST_REPO=manageiq-providers-openshift
+  - TEST_REPO=manageiq-providers-openstack
+  - TEST_REPO=manageiq-providers-ovirt
+  - TEST_REPO=manageiq-providers-redfish
+  - TEST_REPO=manageiq-providers-scvmm
+  - TEST_REPO=manageiq-providers-vmware
+  - TEST_REPO=manageiq-ui-classic
+  - TEST_REPO=manageiq-api
