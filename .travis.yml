@@ -14,6 +14,7 @@ matrix:
   fast_finish: true
 env:
   global:
-  - REPOS=
+  - REPOS=manageiq#20499,manageiq-providers-ibm_cloud#9
   matrix:
-  - TEST_REPO=manageiq
+  - TEST_REPO=manageiq#20499
+  - TEST_REPO=manageiq-providers-ibm_cloud#9
