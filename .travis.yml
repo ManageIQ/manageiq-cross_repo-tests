@@ -14,6 +14,25 @@ matrix:
   fast_finish: true
 env:
   global:
-  - REPOS=
+  - REPOS=manageiq#20173,manageiq-providers-kubernetes#395,manageiq-providers-openshift#189,manageiq-providers-google#153
   matrix:
-  - TEST_REPO=manageiq
+  - TEST_REPO=manageiq#20173
+  - TEST_REPO=manageiq-providers-kubernetes#395
+  - TEST_REPO=manageiq-smartstate
+  - TEST_REPO=manageiq-api
+  - TEST_REPO=manageiq-automation_engine
+  - TEST_REPO=manageiq-content
+  - TEST_REPO=manageiq-ui-classic
+  - TEST_REPO=manageiq-providers-amazon
+  - TEST_REPO=manageiq-providers-ansible_tower
+  - TEST_REPO=manageiq-providers-azure
+  - TEST_REPO=manageiq-providers-foreman
+  - TEST_REPO=manageiq-providers-google#153
+  - TEST_REPO=manageiq-providers-kubevirt
+  - TEST_REPO=manageiq-providers-lenovo
+  - TEST_REPO=manageiq-providers-openshift#189
+  - TEST_REPO=manageiq-providers-openstack
+  - TEST_REPO=manageiq-providers-ovirt
+  - TEST_REPO=manageiq-providers-redfish
+  - TEST_REPO=manageiq-providers-scvmm
+  - TEST_REPO=manageiq-providers-vmware
