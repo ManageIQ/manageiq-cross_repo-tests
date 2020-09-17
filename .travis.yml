@@ -14,6 +14,9 @@ matrix:
   fast_finish: true
 env:
   global:
-  - REPOS=
+  - REPOS=https://github.com/ManageIQ/manageiq/pull/20561,https://github.com/ManageIQ/manageiq-providers-azure/pull/411,https://github.com/ManageIQ/manageiq-providers-kubernetes/pull/399,https://github.com/ManageIQ/manageiq-providers-amazon/pull/650
   matrix:
-  - TEST_REPO=manageiq
+  - TEST_REPO=https://github.com/ManageIQ/manageiq/pull/20561
+  - TEST_REPO=https://github.com/ManageIQ/manageiq-providers-azure/pull/411
+  - TEST_REPO=https://github.com/ManageIQ/manageiq-providers-kubernetes/pull/399
+  - TEST_REPO=https://github.com/ManageIQ/manageiq-providers-amazon/pull/650
