@@ -14,6 +14,6 @@ matrix:
   fast_finish: true
 env:
   global:
-  - REPOS=
+  - REPOS=https://github.com/ManageIQ/manageiq-schema/pull/514
   matrix:
-  - TEST_REPO=manageiq
+  - TEST_REPO=https://github.com/ManageIQ/manageiq/pull/20577
