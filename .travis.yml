@@ -14,6 +14,6 @@ matrix:
   fast_finish: true
 env:
   global:
-  - REPOS=
+  - REPOS=manageiq#20572,activerecord-virtual_attributes#80
   matrix:
-  - TEST_REPO=manageiq
+  - TEST_REPO=manageiq#20572
