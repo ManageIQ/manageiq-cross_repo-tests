@@ -9,14 +9,16 @@ addons:
   apt:
     packages:
     - libarchive-dev
-script: bundle exec manageiq-cross_repo
+script: echo $RAILS_COMMIT; bundle exec manageiq-cross_repo
 matrix:
   fast_finish: true
 env:
   global:
-  - REPOS=
+  - REPOS=NickLaMuro/manageiq@rails-6-debug,NickLaMuro/activerecord-id_regions@rails-6-debug,ManageIQ/manageiq-api#963,NickLaMuro/manageiq-gems-pending@rails-6-debug,NickLaMuro/manageiq-graphql@rails-6-debug,NickLaMuro/inventory_refresh@rails-6-debug,ManageIQ/jquery-rjs#2,NickLaMuro/manageiq-postgres_ha_admin@rails-6-debug,ManageIQ/manageiq-providers-ansible_tower#246,ManageIQ/manageiq-providers-lenovo#322,ManageIQ/manageiq-providers-nsxt#27,NickLaMuro/manageiq-providers-openstack@rails-6-debug,NickLaMuro/manageiq-schema@rails-6-debug,NickLaMuro/manageiq-ui-classic@rails-6-debug,NickLaMuro/ovirt_metrics@rails-6-debug,NickLaMuro/vmware_web_service@rails-6-debug
+  - RAILS_COMMIT=0f0aa6a275876502e002c054896734d6536ba5cd
+  - BUNDLE_BUNDLER_INJECT__DISABLE_WARN_OVERRIDE_GEM=true
   matrix:
-  - TEST_REPO=manageiq
+  - TEST_REPO=NickLaMuro/manageiq-graphql@rails-6-debug
 
 # Convenience list of repos for copy/paste
 #
