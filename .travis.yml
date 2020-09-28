@@ -15,6 +15,36 @@ branches:
   - master
 env:
   global:
-  - REPOS=
+  - REPOS=ManageIQ/manageiq#20778,ManageIQ/manageiq-api#963,ManageIQ/manageiq-gems-pending#503,ManageIQ/manageiq-graphql#96,ManageIQ/manageiq-providers-ansible_tower#246,ManageIQ/manageiq-providers-lenovo#322,ManageIQ/manageiq-providers-nsxt#27,ManageIQ/manageiq-providers-openstack#663,ManageIQ/manageiq-schema#531,ManageIQ/manageiq-ui-classic#7481
   matrix:
-  - TEST_REPO=manageiq
+  - TEST_REPO=ManageIQ/manageiq#20778
+  - TEST_REPO=ManageIQ/manageiq-ui-classic#7481
+  - TEST_REPO=ManageIQ/manageiq-api#963
+  - TEST_REPO=manageiq-automation_engine
+  - TEST_REPO=manageiq-consumption
+  - TEST_REPO=manageiq-content
+  - TEST_REPO=manageiq-decorators
+  - TEST_REPO=manageiq-gems-pending#503
+  - TEST_REPO=manageiq-graphql#96
+  - TEST_REPO=manageiq-schema#531
+  - TEST_REPO=manageiq-v2v
+  - TEST_REPO=manageiq-providers-amazon
+  - TEST_REPO=manageiq-providers-ansible_tower#246
+  - TEST_REPO=manageiq-providers-autosde
+  - TEST_REPO=manageiq-providers-azure
+  - TEST_REPO=manageiq-providers-azure_stack
+  - TEST_REPO=manageiq-providers-foreman
+  - TEST_REPO=manageiq-providers-google
+  - TEST_REPO=manageiq-providers-ibm_cloud
+  - TEST_REPO=manageiq-providers-ibm_terraform
+  - TEST_REPO=manageiq-providers-kubernetes
+  - TEST_REPO=manageiq-providers-kubevirt
+  - TEST_REPO=manageiq-providers-lenovo#322
+  - TEST_REPO=manageiq-providers-nsxt#27
+  - TEST_REPO=manageiq-providers-nuage
+  - TEST_REPO=manageiq-providers-openshift
+  - TEST_REPO=manageiq-providers-openstack#663
+  - TEST_REPO=manageiq-providers-ovirt
+  - TEST_REPO=manageiq-providers-redfish
+  - TEST_REPO=manageiq-providers-scvmm
+  - TEST_REPO=manageiq-providers-vmware
