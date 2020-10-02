@@ -16,4 +16,4 @@ env:
   global:
   - REPOS=autosde/manageiq-providers-autosde@provider-basics
   matrix:
-  - TEST_REPO=manageiq
+  - TEST_REPO=manageiq#20629
