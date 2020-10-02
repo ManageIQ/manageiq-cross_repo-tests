@@ -14,6 +14,7 @@ matrix:
   fast_finish: true
 env:
   global:
-  - REPOS=autosde/manageiq-providers-autosde@provider-basics
+  - REPOS=autosde/manageiq-providers-autosde@provider-basics,manageiq#20629
   matrix:
   - TEST_REPO=manageiq#20629
+  - TEST_REPO=autosde/manageiq-providers-autosde@provider-basics
