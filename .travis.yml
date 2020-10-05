@@ -17,3 +17,4 @@ env:
   - REPOS=autosde/manageiq-providers-autosde,manageiq#20629
   matrix:  
   - TEST_REPO=autosde/manageiq-providers-autosde
+  - TEST_REPO=manageiq#20629
