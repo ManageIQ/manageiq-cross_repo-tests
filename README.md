@@ -58,6 +58,26 @@ For more information about the variables or more examples, refer to the
 
 `Same syntax is used for tags`
 
+##### Full List of Providers
+    manageiq-providers-amazon
+    manageiq-providers-ansible_tower
+    manageiq-providers-azure
+    manageiq-providers-azure_stack
+    manageiq-providers-foreman
+    manageiq-providers-google
+    manageiq-providers-ibm_cloud
+    manageiq-providers-ibm_terraform
+    manageiq-providers-kubernetes
+    manageiq-providers-kubevirt
+    manageiq-providers-lenovo
+    manageiq-providers-nsxt
+    manageiq-providers-openshift
+    manageiq-providers-openstack
+    manageiq-providers-ovirt
+    manageiq-providers-redfish
+    manageiq-providers-scvmm
+    manageiq-providers-vmware
+
 ## License
 
 Open source under the terms of the [MIT License](https://opensource.org/licenses/MIT).
