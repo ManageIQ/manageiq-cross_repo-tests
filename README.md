@@ -61,6 +61,7 @@ For more information about the variables or more examples, refer to the
 ##### Full List of Providers
     manageiq-providers-amazon
     manageiq-providers-ansible_tower
+    manageiq-providers-autosde
     manageiq-providers-azure
     manageiq-providers-azure_stack
     manageiq-providers-foreman
