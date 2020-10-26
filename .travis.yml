@@ -1,9 +1,7 @@
-dist: xenial
 language: ruby
 rvm:
 - 2.5.5
-cache:
-  bundler: true
+cache: bundler
 addons:
   postgresql: '10'
   apt:
