@@ -15,41 +15,11 @@ branches:
   - master
 env:
   global:
-  - REPOS=
+  - REPOS=manageiq#2073,manageiq-providers-openstack#654
   matrix:
-  - TEST_REPO=manageiq
-
-# Convenience list of repos for copy/paste
-#
-# manageiq-api
-# manageiq-automation_engine
-# manageiq-consumption
-# manageiq-content
-# manageiq-decorators
-# manageiq-gems-pending
-# manageiq-graphql
-# manageiq-schema
-# manageiq-ui-classic
-# manageiq-ui-service
-# manageiq-v2v
-#
-# manageiq-providers-amazon
-# manageiq-providers-ansible_tower
-# manageiq-providers-autosde
-# manageiq-providers-azure
-# manageiq-providers-azure_stack
-# manageiq-providers-foreman
-# manageiq-providers-google
-# manageiq-providers-ibm_cloud
-# manageiq-providers-ibm_terraform
-# manageiq-providers-kubernetes
-# manageiq-providers-kubevirt
-# manageiq-providers-lenovo
-# manageiq-providers-nsxt
-# manageiq-providers-nuage
-# manageiq-providers-openshift
-# manageiq-providers-openstack
-# manageiq-providers-ovirt
-# manageiq-providers-redfish
-# manageiq-providers-scvmm
-# manageiq-providers-vmware
+  - TEST_REPO=manageiq#2073
+  - TEST_REPO=manageiq-api
+  - TEST_REPO=manageiq-ui-classic
+  - TEST_REPO=manageiq-providers-openstack#654
+  - TEST_REPO=manageiq-providers-amazon
+  - TEST_REPO=manageiq-providers-vmware
