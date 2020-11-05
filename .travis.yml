@@ -1,3 +1,4 @@
+---
 language: ruby
 rvm:
 - 2.5.5
@@ -15,41 +16,14 @@ branches:
   - master
 env:
   global:
-  - REPOS=
+  - REPOS=https://github.com/ManageIQ/manageiq-providers-amazon/pull/669 https://github.com/ManageIQ/manageiq-providers-azure/pull/424
+    https://github.com/ManageIQ/manageiq-providers-ibm_cloud/pull/116 https://github.com/ManageIQ/manageiq-providers-kubernetes/pull/409
+    https://github.com/ManageIQ/manageiq-providers-openstack/pull/665 https://github.com/ManageIQ/manageiq-providers-vmware/pull/669
+    https://github.com/ManageIQ/manageiq-schema/pull/525 https://github.com/ManageIQ/manageiq/pull/20776,ManageIQ/manageiq#20776
   matrix:
-  - TEST_REPO=manageiq
-
-# Convenience list of repos for copy/paste
-#
-# manageiq-api
-# manageiq-automation_engine
-# manageiq-consumption
-# manageiq-content
-# manageiq-decorators
-# manageiq-gems-pending
-# manageiq-graphql
-# manageiq-schema
-# manageiq-ui-classic
-# manageiq-ui-service
-# manageiq-v2v
-#
-# manageiq-providers-amazon
-# manageiq-providers-ansible_tower
-# manageiq-providers-autosde
-# manageiq-providers-azure
-# manageiq-providers-azure_stack
-# manageiq-providers-foreman
-# manageiq-providers-google
-# manageiq-providers-ibm_cloud
-# manageiq-providers-ibm_terraform
-# manageiq-providers-kubernetes
-# manageiq-providers-kubevirt
-# manageiq-providers-lenovo
-# manageiq-providers-nsxt
-# manageiq-providers-nuage
-# manageiq-providers-openshift
-# manageiq-providers-openstack
-# manageiq-providers-ovirt
-# manageiq-providers-redfish
-# manageiq-providers-scvmm
-# manageiq-providers-vmware
+  - TEST_REPO=https://github.com/ManageIQ/manageiq-providers-amazon/pull/669
+  - TEST_REPO=https://github.com/ManageIQ/manageiq-providers-azure/pull/424
+  - TEST_REPO=https://github.com/ManageIQ/manageiq-providers-ibm_cloud/pull/116
+  - TEST_REPO=https://github.com/ManageIQ/manageiq-providers-kubernetes/pull/409
+  - TEST_REPO=https://github.com/ManageIQ/manageiq-providers-openstack/pull/665
+  - TEST_REPO=https://github.com/ManageIQ/manageiq-providers-vmware/pull/669
