@@ -15,9 +15,9 @@ branches:
   - master
 env:
   global:
-  - REPOS=
+  - REPOS=manageiq#20788,manageiq-schema#492
   matrix:
-  - TEST_REPO=manageiq
+  - TEST_REPO=manageiq#20788
 
 # Convenience list of repos for copy/paste
 #
