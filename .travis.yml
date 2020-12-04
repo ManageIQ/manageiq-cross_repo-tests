@@ -1,3 +1,4 @@
+---
 language: ruby
 rvm:
 - 2.5.5
@@ -15,6 +16,6 @@ branches:
   - master
 env:
   global:
-  - REPOS=
+  - REPOS=https://github.com/ManageIQ/manageiq-providers-amazon/pull/672,https://github.com/ManageIQ/manageiq-providers-ansible_tower/pull/247,https://github.com/ManageIQ/manageiq-providers-azure_stack/pull/50,https://github.com/ManageIQ/manageiq-providers-foreman/pull/81,https://github.com/ManageIQ/manageiq-providers-google/pull/171,https://github.com/ManageIQ/manageiq-providers-nsxt/pull/30,https://github.com/ManageIQ/manageiq-providers-nuage/pull/235,https://github.com/ManageIQ/manageiq-providers-scvmm/pull/174,https://github.com/ManageIQ/manageiq-providers-vmware/pull/673
   matrix:
-  - TEST_REPO=manageiq
+  - TEST_REPO=https://github.com/ManageIQ/manageiq/pull/20855
