@@ -15,6 +15,6 @@ branches:
   - master
 env:
   global:
-  - REPOS=
+  - REPOS=manageiq-ui-classic
   matrix:
-  - TEST_REPO=manageiq
+  - TEST_REPO=manageiq-ui-classic SCRIPT_CMD="bundle exec rake" TEST_SUITE=spec:javascript
