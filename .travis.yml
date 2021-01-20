@@ -4,6 +4,7 @@ rvm:
 cache: bundler
 addons:
   postgresql: '10'
+  chrome: beta
   apt:
     packages:
     - libarchive-dev
@@ -15,6 +16,44 @@ branches:
   - master
 env:
   global:
-  - REPOS=
+  - REPOS=ManageIQ/manageiq@master
   matrix:
-  - TEST_REPO=manageiq
+  - TEST_REPO=manageiq@master
+  - TEST_REPO=manageiq@master TEST_SUITE=brakeman
+  - TEST_REPO=manageiq-ui-classic#7592
+  - TEST_REPO=manageiq-ui-classic#7592 TEST_SUITE=spec:routes
+  - TEST_REPO=manageiq-ui-classic#7592 TEST_SUITE=spec:javascript
+  - TEST_REPO=manageiq-ui-classic#7592 TEST_SUITE=spec:compile
+  - TEST_REPO=manageiq-ui-classic#7592 TEST_SUITE=spec:jest
+  - TEST_REPO=manageiq-ui-classic#7592 TEST_SUITE=spec:debride
+  - TEST_REPO=manageiq-api
+  - TEST_REPO=manageiq-automation_engine
+  - TEST_REPO=manageiq-consumption
+  - TEST_REPO=manageiq-content
+  - TEST_REPO=manageiq-decorators
+  - TEST_REPO=manageiq-gems-pending
+  - TEST_REPO=manageiq-graphql
+  - TEST_REPO=manageiq-schema
+  - TEST_REPO=manageiq-ui-service#1696
+  - TEST_REPO=manageiq-v2v#1153
+  - TEST_REPO=manageiq-v2v#1153 TEST_SUITE=javascript
+  - TEST_REPO=manageiq-providers-amazon
+  - TEST_REPO=manageiq-providers-ansible_tower
+  - TEST_REPO=manageiq-providers-autosde
+  - TEST_REPO=manageiq-providers-azure
+  - TEST_REPO=manageiq-providers-azure_stack
+  - TEST_REPO=manageiq-providers-foreman
+  - TEST_REPO=manageiq-providers-google
+  - TEST_REPO=manageiq-providers-ibm_cloud
+  - TEST_REPO=manageiq-providers-ibm_terraform
+  - TEST_REPO=manageiq-providers-kubernetes
+  - TEST_REPO=manageiq-providers-kubevirt
+  - TEST_REPO=manageiq-providers-lenovo
+  - TEST_REPO=manageiq-providers-nsxt
+  - TEST_REPO=manageiq-providers-nuage
+  - TEST_REPO=manageiq-providers-openshift
+  - TEST_REPO=manageiq-providers-openstack
+  - TEST_REPO=manageiq-providers-ovirt
+  - TEST_REPO=manageiq-providers-redfish
+  - TEST_REPO=manageiq-providers-scvmm
+  - TEST_REPO=manageiq-providers-vmware
