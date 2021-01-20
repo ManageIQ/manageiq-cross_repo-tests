@@ -4,6 +4,7 @@ rvm:
 cache: bundler
 addons:
   postgresql: '10'
+  chrome: beta
   apt:
     packages:
     - libarchive-dev
@@ -15,6 +16,6 @@ branches:
   - master
 env:
   global:
-  - REPOS=
+  - REPOS=ManageIQ/manageiq@master
   matrix:
-  - TEST_REPO=manageiq
+  - TEST_REPO=manageiq-ui-service
