@@ -15,6 +15,6 @@ branches:
   - master
 env:
   global:
-  - REPOS=manageiq-api#985,manageiq#20962,manageiq-providers-autosde#51,manageiq-ui-classic#7587
+  - REPOS=manageiq-api#985,manageiq#20991,manageiq-providers-autosde#51,manageiq-ui-classic#7587
   matrix:
   - TEST_REPO=manageiq-api
