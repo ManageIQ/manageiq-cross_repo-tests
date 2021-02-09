@@ -20,10 +20,9 @@ env:
   global:
   - REPOS=ManageIQ/manageiq#21023,ManageIQ/manageiq-automation_engine#471
   matrix:
-  - TEST_REPO=ManageIQ/manageiq
   - TEST_REPO=ManageIQ/manageiq#21023
   - TEST_REPO=ManageIQ/manageiq-api
-  - TEST_REPO=ManageIQ/manageiq-automation_engine
+  - TEST_REPO=ManageIQ/manageiq-automation_engine#471
   - TEST_REPO=ManageIQ/manageiq-consumption
   - TEST_REPO=ManageIQ/manageiq-content
   - TEST_REPO=ManageIQ/manageiq-decorators
