@@ -1,3 +1,4 @@
+---
 language: ruby
 rvm:
 - 2.5.5
@@ -15,6 +16,7 @@ branches:
   - master
 env:
   global:
-  - REPOS=
+  - REPOS=ManageIQ/@refactor_all_valid_ems_in_zone,ManageIQ/manageiq#21060
   matrix:
-  - TEST_REPO=manageiq
+  - TEST_REPO=ManageIQ/@refactor_all_valid_ems_in_zone
+  - TEST_REPO=ManageIQ/manageiq#21060
