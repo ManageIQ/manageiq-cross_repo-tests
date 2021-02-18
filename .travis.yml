@@ -1,9 +1,11 @@
+---
 language: ruby
 rvm:
 - 2.5.5
 cache: bundler
 addons:
   postgresql: '10'
+  chrome: beta
   apt:
     packages:
     - libarchive-dev
@@ -15,6 +17,12 @@ branches:
   - master
 env:
   global:
-  - REPOS=
+  - REPOS=ManageIQ/manageiq-api#1010,ManageIQ/manageiq-ui-classic#7630
   matrix:
-  - TEST_REPO=manageiq
+  - TEST_REPO=ManageIQ/manageiq-api#1010
+  - TEST_REPO=ManageIQ/manageiq-ui-classic#7630
+  - TEST_REPO=ManageIQ/manageiq-ui-classic#7630 TEST_SUITE=spec:routes
+  - TEST_REPO=ManageIQ/manageiq-ui-classic#7630 TEST_SUITE=spec:javascript
+  - TEST_REPO=ManageIQ/manageiq-ui-classic#7630 TEST_SUITE=spec:compile
+  - TEST_REPO=ManageIQ/manageiq-ui-classic#7630 TEST_SUITE=spec:jest
+  - TEST_REPO=ManageIQ/manageiq-ui-classic#7630 TEST_SUITE=spec:debride
