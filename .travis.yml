@@ -1,7 +1,9 @@
 language: ruby
 rvm:
 - 2.5.5
-cache: bundler
+cache:
+  directories:
+  - vendor/bundle
 addons:
   postgresql: '10'
   apt:
