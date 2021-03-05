@@ -4,6 +4,7 @@ rvm:
 cache:
   directories:
   - vendor/bundle
+  - vendor/test_repo/bundle
 addons:
   postgresql: '10'
   apt:
@@ -17,6 +18,7 @@ branches:
   - master
 env:
   global:
-  - REPOS=
+  - REPOS=ManageIQ/manageiq@master
   matrix:
-  - TEST_REPO=manageiq
+  - TEST_REPO=ManageIQ/manageiq-content
+  - TEST_REPO=ManageIQ/manageiq-automation_engine
