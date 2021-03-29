@@ -1,3 +1,4 @@
+---
 language: ruby
 rvm:
 - 2.6.6
@@ -17,6 +18,9 @@ branches:
   - master
 env:
   global:
-  - REPOS=
+  - REPOS=ManageIQ/manageiq#20907,ManageIQ/manageiq-providers-azure_stack#54,ManageIQ/manageiq-providers-nuage#237,ManageIQ/manageiq-providers-redfish#133
   matrix:
-  - TEST_REPO=manageiq
+  - TEST_REPO=ManageIQ/manageiq#20907
+  - TEST_REPO=ManageIQ/manageiq-providers-azure_stack#54
+  - TEST_REPO=ManageIQ/manageiq-providers-nuage#237
+  - TEST_REPO=ManageIQ/manageiq-providers-redfish#133
