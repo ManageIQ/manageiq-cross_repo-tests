@@ -1,3 +1,4 @@
+---
 language: ruby
 rvm:
 - 2.6.6
@@ -17,6 +18,37 @@ branches:
   - master
 env:
   global:
-  - REPOS=
+  - REPOS=ManageIQ/manageiq-style#23
   matrix:
-  - TEST_REPO=manageiq
+  - SCRIPT_CMD="bundle exec rubocop" TEST_REPO=ManageIQ/manageiq
+  - SCRIPT_CMD="bundle exec rubocop" TEST_REPO=ManageIQ/manageiq-api
+  - SCRIPT_CMD="bundle exec rubocop" TEST_REPO=ManageIQ/manageiq-automation_engine
+  - SCRIPT_CMD="bundle exec rubocop" TEST_REPO=ManageIQ/manageiq-consumption
+  - SCRIPT_CMD="bundle exec rubocop" TEST_REPO=ManageIQ/manageiq-content
+  - SCRIPT_CMD="bundle exec rubocop" TEST_REPO=ManageIQ/manageiq-decorators
+  - SCRIPT_CMD="bundle exec rubocop" TEST_REPO=ManageIQ/manageiq-gems-pending
+  - SCRIPT_CMD="bundle exec rubocop" TEST_REPO=ManageIQ/manageiq-graphql
+  - SCRIPT_CMD="bundle exec rubocop" TEST_REPO=ManageIQ/manageiq-providers-amazon
+  - SCRIPT_CMD="bundle exec rubocop" TEST_REPO=ManageIQ/manageiq-providers-ansible_tower
+  - SCRIPT_CMD="bundle exec rubocop" TEST_REPO=ManageIQ/manageiq-providers-autosde
+  - SCRIPT_CMD="bundle exec rubocop" TEST_REPO=ManageIQ/manageiq-providers-azure
+  - SCRIPT_CMD="bundle exec rubocop" TEST_REPO=ManageIQ/manageiq-providers-azure_stack
+  - SCRIPT_CMD="bundle exec rubocop" TEST_REPO=ManageIQ/manageiq-providers-foreman
+  - SCRIPT_CMD="bundle exec rubocop" TEST_REPO=ManageIQ/manageiq-providers-google
+  - SCRIPT_CMD="bundle exec rubocop" TEST_REPO=ManageIQ/manageiq-providers-ibm_cloud
+  - SCRIPT_CMD="bundle exec rubocop" TEST_REPO=ManageIQ/manageiq-providers-ibm_terraform
+  - SCRIPT_CMD="bundle exec rubocop" TEST_REPO=ManageIQ/manageiq-providers-kubernetes
+  - SCRIPT_CMD="bundle exec rubocop" TEST_REPO=ManageIQ/manageiq-providers-kubevirt
+  - SCRIPT_CMD="bundle exec rubocop" TEST_REPO=ManageIQ/manageiq-providers-lenovo
+  - SCRIPT_CMD="bundle exec rubocop" TEST_REPO=ManageIQ/manageiq-providers-nsxt
+  - SCRIPT_CMD="bundle exec rubocop" TEST_REPO=ManageIQ/manageiq-providers-nuage
+  - SCRIPT_CMD="bundle exec rubocop" TEST_REPO=ManageIQ/manageiq-providers-openshift
+  - SCRIPT_CMD="bundle exec rubocop" TEST_REPO=ManageIQ/manageiq-providers-openstack
+  - SCRIPT_CMD="bundle exec rubocop" TEST_REPO=ManageIQ/manageiq-providers-oracle_cloud
+  - SCRIPT_CMD="bundle exec rubocop" TEST_REPO=ManageIQ/manageiq-providers-ovirt
+  - SCRIPT_CMD="bundle exec rubocop" TEST_REPO=ManageIQ/manageiq-providers-redfish
+  - SCRIPT_CMD="bundle exec rubocop" TEST_REPO=ManageIQ/manageiq-providers-scvmm
+  - SCRIPT_CMD="bundle exec rubocop" TEST_REPO=ManageIQ/manageiq-providers-vmware
+  - SCRIPT_CMD="bundle exec rubocop" TEST_REPO=ManageIQ/manageiq-schema
+  - SCRIPT_CMD="bundle exec rubocop" TEST_REPO=ManageIQ/manageiq-ui-classic
+  - SCRIPT_CMD="bundle exec rubocop" TEST_REPO=ManageIQ/manageiq-v2v
