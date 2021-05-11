@@ -1,3 +1,4 @@
+---
 language: ruby
 rvm:
 - 2.6.6
@@ -17,6 +18,7 @@ branches:
   - master
 env:
   global:
-  - REPOS=
+  - REPOS=ManageIQ/manageiq#21212,ManageIQ/manageiq-providers-ibm_power_vc#13
   matrix:
-  - TEST_REPO=manageiq
+  - TEST_REPO=ManageIQ/manageiq#21212
+  - TEST_REPO=ManageIQ/manageiq-providers-ibm_power_vc#13
