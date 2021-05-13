@@ -17,6 +17,7 @@ branches:
   - master
 env:
   global:
-  - REPOS=
+  - REPOS=manageiq@master
   matrix:
-  - TEST_REPO=manageiq
+  - TEST_REPO=manageiq-content
+  - TEST_REPO=manageiq-automation_engine
