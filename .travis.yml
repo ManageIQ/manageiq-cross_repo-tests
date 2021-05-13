@@ -4,11 +4,15 @@ rvm:
 cache:
   directories:
   - vendor/bundle
+  - vendor/cross-repo-bundle
 addons:
   postgresql: '10'
   apt:
     packages:
     - libarchive-dev
+before_install:
+- bundle config set --global path vendor/bundle
+- bundle config set --local path vendor/cross-repo-bundle
 script: bundle exec manageiq-cross_repo
 matrix:
   fast_finish: true
@@ -17,6 +21,7 @@ branches:
   - master
 env:
   global:
-  - REPOS=
+  - REPOS=manageiq@master
   matrix:
-  - TEST_REPO=manageiq
+  - TEST_REPO=manageiq-content
+  - TEST_REPO=manageiq-automation_engine
