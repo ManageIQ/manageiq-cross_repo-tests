@@ -21,3 +21,4 @@ env:
   - REPOS=ManageIQ/manageiq-schema#576
   matrix:
   - TEST_REPO=ManageIQ/manageiq#21241
+  - TEST_REPO=ManageIQ/manageiq-ui-classic
