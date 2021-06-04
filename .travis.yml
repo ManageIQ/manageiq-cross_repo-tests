@@ -20,5 +20,4 @@ env:
   global:
   - REPOS=ManageIQ/manageiq-api#1043
   matrix:
-  - TEST_REPO=ManageIQ/manageiq-api#1043
   - TEST_REPO=ManageIQ/manageiq-ui-clasic
