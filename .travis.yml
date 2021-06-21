@@ -22,3 +22,4 @@ env:
   matrix:
   - TEST_REPO=ManageIQ/manageiq#21241
   - TEST_REPO=ManageIQ/manageiq-ui-classic
+  - TEST_REPO=ManageIQ/manageiq-api
