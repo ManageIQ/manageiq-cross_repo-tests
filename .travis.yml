@@ -18,8 +18,8 @@ branches:
   - master
 env:
   global:
-  - REPOS=ManageIQ/manageiq-schema#576,ManageIQ/manageiq#21241
+  - REPOS=ManageIQ/manageiq-schema#576,ManageIQ/manageiq#21241,ManageIQ/manageiq-api#1052
   matrix:
   - TEST_REPO=ManageIQ/manageiq#21241
   - TEST_REPO=ManageIQ/manageiq-ui-classic
-  - TEST_REPO=ManageIQ/manageiq-api
+  - TEST_REPO=ManageIQ/manageiq-api#1052
