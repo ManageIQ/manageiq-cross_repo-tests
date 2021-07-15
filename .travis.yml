@@ -1,3 +1,4 @@
+---
 language: ruby
 rvm:
 - 2.6.6
@@ -17,6 +18,40 @@ branches:
   - master
 env:
   global:
-  - REPOS=
+  - REPOS=ManageIQ/manageiq#21334,ManageIQ/manageiq-providers-vmware#736,ManageIQ/manageiq-smartstate#159
   matrix:
-  - TEST_REPO=manageiq
+  - TEST_REPO=ManageIQ/manageiq#21334
+  - TEST_REPO=ManageIQ/manageiq-api
+  - TEST_REPO=ManageIQ/manageiq-automation_engine
+  - TEST_REPO=ManageIQ/manageiq-consumption
+  - TEST_REPO=ManageIQ/manageiq-content
+  - TEST_REPO=ManageIQ/manageiq-decorators
+  - TEST_REPO=ManageIQ/manageiq-gems-pending
+  - TEST_REPO=ManageIQ/manageiq-graphql
+  - TEST_REPO=ManageIQ/manageiq-providers-amazon
+  - TEST_REPO=ManageIQ/manageiq-providers-ansible_tower
+  - TEST_REPO=ManageIQ/manageiq-providers-autosde
+  - TEST_REPO=ManageIQ/manageiq-providers-azure
+  - TEST_REPO=ManageIQ/manageiq-providers-azure_stack
+  - TEST_REPO=ManageIQ/manageiq-providers-foreman
+  - TEST_REPO=ManageIQ/manageiq-providers-google
+  - TEST_REPO=ManageIQ/manageiq-providers-ibm_cloud
+  - TEST_REPO=ManageIQ/manageiq-providers-ibm_power_vc
+  - TEST_REPO=ManageIQ/manageiq-providers-ibm_terraform
+  - TEST_REPO=ManageIQ/manageiq-providers-kubernetes
+  - TEST_REPO=ManageIQ/manageiq-providers-kubevirt
+  - TEST_REPO=ManageIQ/manageiq-providers-lenovo
+  - TEST_REPO=ManageIQ/manageiq-providers-nsxt
+  - TEST_REPO=ManageIQ/manageiq-providers-nuage
+  - TEST_REPO=ManageIQ/manageiq-providers-openshift
+  - TEST_REPO=ManageIQ/manageiq-providers-openstack
+  - TEST_REPO=ManageIQ/manageiq-providers-oracle_cloud
+  - TEST_REPO=ManageIQ/manageiq-providers-ovirt
+  - TEST_REPO=ManageIQ/manageiq-providers-redfish
+  - TEST_REPO=ManageIQ/manageiq-providers-scvmm
+  - TEST_REPO=ManageIQ/manageiq-providers-vmware#736
+  - TEST_REPO=ManageIQ/manageiq-schema
+  - TEST_REPO=ManageIQ/manageiq-smartstate#159
+  - TEST_REPO=ManageIQ/manageiq-ui-classic
+  - TEST_REPO=ManageIQ/manageiq-ui-service
+  - TEST_REPO=ManageIQ/manageiq-v2v
