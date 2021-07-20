@@ -1,3 +1,4 @@
+---
 language: ruby
 rvm:
 - 2.6.6
@@ -17,6 +18,11 @@ branches:
   - master
 env:
   global:
-  - REPOS=
+  - REPOS=ManageIQ/manageiq#21333,ManageIQ/manageiq-providers-ibm_cloud#244,ManageIQ/manageiq-providers-ibm_power_vc#19,ManageIQ/manageiq-schema#587
   matrix:
-  - TEST_REPO=manageiq
+  - TEST_REPO=ManageIQ/manageiq#21333
+  - TEST_REPO=ManageIQ/manageiq-api
+  - TEST_REPO=ManageIQ/manageiq-providers-ibm_cloud#244
+  - TEST_REPO=ManageIQ/manageiq-providers-ibm_power_vc#19
+  - TEST_REPO=ManageIQ/manageiq-schema#587
+  - TEST_REPO=ManageIQ/manageiq-ui-classic
