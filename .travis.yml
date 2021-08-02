@@ -18,5 +18,36 @@ branches:
 env:
   global:
   - REPOS=
+  - REPOS=ManageIQ/manageiq#21215,ManageIQ/manageiq-api@kasparov,ManageIQ/manageiq-gems-pending@kasparov,ManageIQ/manageiq-graphql@kasparov,ManageIQ/manageiq-providers-ansible_tower@kasparov,ManageIQ/manageiq-providers-lenovo@kasparov,ManageIQ/manageiq-providers-nsxt@kasparov,ManageIQ/manageiq-providers-openstack@kasparov,ManageIQ/manageiq-schema@kasparov,ManageIQ/manageiq-ui-classic@kasparov
   matrix:
-  - TEST_REPO=manageiq
+  - TEST_REPO=ManageIQ/manageiq#21215
+  - TEST_REPO=ManageIQ/manageiq-ui-classic@kasparov
+  - TEST_REPO=ManageIQ/manageiq-api@kasparov
+  - TEST_REPO=manageiq-automation_engine@kasparov
+  - TEST_REPO=manageiq-consumption@kasparov
+  - TEST_REPO=manageiq-content@kasparov
+  - TEST_REPO=manageiq-decorators@kasparov
+  - TEST_REPO=manageiq-gems-pending@kasparov
+  - TEST_REPO=manageiq-graphql@kasparov
+  - TEST_REPO=manageiq-schema@kasparov
+  - TEST_REPO=manageiq-v2v@kasparov
+  - TEST_REPO=manageiq-providers-amazon@kasparov
+  - TEST_REPO=manageiq-providers-ansible_tower@kasparov
+  - TEST_REPO=manageiq-providers-autosde@kasparov
+  - TEST_REPO=manageiq-providers-azure@kasparov
+  - TEST_REPO=manageiq-providers-azure_stack@kasparov
+  - TEST_REPO=manageiq-providers-foreman@kasparov
+  - TEST_REPO=manageiq-providers-google@kasparov
+  - TEST_REPO=manageiq-providers-ibm_cloud@kasparov
+  - TEST_REPO=manageiq-providers-ibm_terraform@kasparov
+  - TEST_REPO=manageiq-providers-kubernetes@kasparov
+  - TEST_REPO=manageiq-providers-kubevirt@kasparov
+  - TEST_REPO=manageiq-providers-lenovo@kasparov
+  - TEST_REPO=manageiq-providers-nsxt@kasparov
+  - TEST_REPO=manageiq-providers-nuage@kasparov
+  - TEST_REPO=manageiq-providers-openshift@kasparov
+  - TEST_REPO=manageiq-providers-openstack@kasparov
+  - TEST_REPO=manageiq-providers-ovirt@kasparov
+  - TEST_REPO=manageiq-providers-redfish@kasparov
+  - TEST_REPO=manageiq-providers-scvmm@kasparov
+  - TEST_REPO=manageiq-providers-vmware@kasparov
