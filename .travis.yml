@@ -18,9 +18,9 @@ branches:
 env:
   global:
   - REPOS=
-  - REPOS=ManageIQ/manageiq#21215,ManageIQ/manageiq-api@kasparov,ManageIQ/manageiq-gems-pending@kasparov,ManageIQ/manageiq-graphql@kasparov,ManageIQ/manageiq-providers-ansible_tower@kasparov,ManageIQ/manageiq-providers-lenovo@kasparov,ManageIQ/manageiq-providers-nsxt@kasparov,ManageIQ/manageiq-providers-openstack@kasparov,ManageIQ/manageiq-schema@kasparov,ManageIQ/manageiq-ui-classic@kasparov
+  - REPOS=NickLaMuro/manageiq@cross_repo_kasparov_rails_5_2_6,ManageIQ/manageiq-api@kasparov,ManageIQ/manageiq-gems-pending@kasparov,ManageIQ/manageiq-graphql@kasparov,ManageIQ/manageiq-providers-ansible_tower@kasparov,ManageIQ/manageiq-providers-lenovo@kasparov,ManageIQ/manageiq-providers-nsxt@kasparov,ManageIQ/manageiq-providers-openstack@kasparov,ManageIQ/manageiq-schema@kasparov,ManageIQ/manageiq-ui-classic@kasparov
   matrix:
-  - TEST_REPO=ManageIQ/manageiq#21215
+  - TEST_REPO=NickLaMuro/manageiq@cross_repo_kasparov_rails_5_2_6
   - TEST_REPO=ManageIQ/manageiq-ui-classic@kasparov
   - TEST_REPO=ManageIQ/manageiq-api@kasparov
   - TEST_REPO=manageiq-automation_engine@kasparov
