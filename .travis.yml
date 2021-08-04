@@ -50,4 +50,3 @@ env:
   - TEST_REPO=ManageIQ/manageiq-providers-redfish@kasparov
   - TEST_REPO=ManageIQ/manageiq-providers-scvmm@kasparov
   - TEST_REPO=ManageIQ/manageiq-providers-vmware@kasparov
-  
