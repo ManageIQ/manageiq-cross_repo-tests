@@ -1,3 +1,4 @@
+---
 language: ruby
 rvm:
 - 2.6.6
@@ -17,6 +18,7 @@ branches:
   - master
 env:
   global:
-  - REPOS=
+  - REPOS=ManageIQ/azure-armrest@master,ManageIQ/manageiq-providers-azure#465
   matrix:
-  - TEST_REPO=manageiq
+  - TEST_REPO=ManageIQ/azure-armrest@master
+  - TEST_REPO=ManageIQ/manageiq-providers-azure#465
