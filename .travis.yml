@@ -29,7 +29,7 @@ env:
   - TEST_REPO=ManageIQ/manageiq-gems-pending@kasparov
   - TEST_REPO=ManageIQ/manageiq-graphql@kasparov
   - TEST_REPO=ManageIQ/manageiq-schema@kasparov
-  - TEST_REPO=ManageIQ/manageiq-v2v@kasparov
+  - TEST_REPO=NickLaMuro/manageiq-v2v@kasparov_for_cross_repo
   - TEST_REPO=ManageIQ/manageiq-providers-amazon@kasparov
   - TEST_REPO=ManageIQ/manageiq-providers-ansible_tower@kasparov
   - TEST_REPO=ManageIQ/manageiq-providers-autosde@kasparov
