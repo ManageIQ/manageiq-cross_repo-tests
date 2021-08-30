@@ -1,3 +1,4 @@
+---
 language: ruby
 rvm:
 - 2.6.6
@@ -17,6 +18,8 @@ branches:
   - master
 env:
   global:
-  - REPOS=
+  - REPOS=ManageIQ/manageiq#21410,agrare/manageiq-providers-ibm_power_vc@morphy,agrare/manageiq-providers-openstack@morphy_openstack_refactoring
   matrix:
-  - TEST_REPO=manageiq
+  - TEST_REPO=ManageIQ/manageiq#21410
+  - TEST_REPO=agrare/manageiq-providers-ibm_power_vc@morphy
+  - TEST_REPO=agrare/manageiq-providers-openstack@morphy_openstack_refactoring
