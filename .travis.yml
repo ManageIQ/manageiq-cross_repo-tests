@@ -1,3 +1,4 @@
+---
 language: ruby
 rvm:
 - 2.6.6
@@ -17,6 +18,7 @@ branches:
   - master
 env:
   global:
-  - REPOS=
+  - REPOS=ManageIQ/manageiq-providers-ibm_cloud#268,agrare/manageiq@morphy_add_cloud_volume_types_inventory_collection
   matrix:
-  - TEST_REPO=manageiq
+  - TEST_REPO=ManageIQ/manageiq-providers-ibm_cloud#268
+  - TEST_REPO=agrare/manageiq@morphy_add_cloud_volume_types_inventory_collection
