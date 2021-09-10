@@ -1,3 +1,4 @@
+---
 language: ruby
 rvm:
 - 2.6.6
@@ -17,6 +18,39 @@ branches:
   - master
 env:
   global:
-  - REPOS=
+  - REPOS=ManageIQ/manageiq#21423,ManageIQ/manageiq-providers-azure#475
   matrix:
-  - TEST_REPO=manageiq
+  - TEST_REPO=ManageIQ/manageiq#21423
+  - TEST_REPO=ManageIQ/manageiq-api@morphy
+  - TEST_REPO=ManageIQ/manageiq-automation_engine@morphy
+  - TEST_REPO=ManageIQ/manageiq-consumption@morphy
+  - TEST_REPO=ManageIQ/manageiq-content@morphy
+  - TEST_REPO=ManageIQ/manageiq-decorators@morphy
+  - TEST_REPO=ManageIQ/manageiq-gems-pending@morphy
+  - TEST_REPO=ManageIQ/manageiq-graphql@morphy
+  - TEST_REPO=ManageIQ/manageiq-providers-amazon@morphy
+  - TEST_REPO=ManageIQ/manageiq-providers-ansible_tower@morphy
+  - TEST_REPO=ManageIQ/manageiq-providers-autosde@morphy
+  - TEST_REPO=ManageIQ/manageiq-providers-azure#475
+  - TEST_REPO=ManageIQ/manageiq-providers-azure_stack@morphy
+  - TEST_REPO=ManageIQ/manageiq-providers-foreman@morphy
+  - TEST_REPO=ManageIQ/manageiq-providers-google@morphy
+  - TEST_REPO=ManageIQ/manageiq-providers-ibm_cloud@morphy
+  - TEST_REPO=ManageIQ/manageiq-providers-ibm_power_vc@morphy
+  - TEST_REPO=ManageIQ/manageiq-providers-ibm_terraform@morphy
+  - TEST_REPO=ManageIQ/manageiq-providers-kubernetes@morphy
+  - TEST_REPO=ManageIQ/manageiq-providers-kubevirt@morphy
+  - TEST_REPO=ManageIQ/manageiq-providers-lenovo@morphy
+  - TEST_REPO=ManageIQ/manageiq-providers-nsxt@morphy
+  - TEST_REPO=ManageIQ/manageiq-providers-nuage@morphy
+  - TEST_REPO=ManageIQ/manageiq-providers-openshift@morphy
+  - TEST_REPO=ManageIQ/manageiq-providers-openstack@morphy
+  - TEST_REPO=ManageIQ/manageiq-providers-oracle_cloud@morphy
+  - TEST_REPO=ManageIQ/manageiq-providers-ovirt@morphy
+  - TEST_REPO=ManageIQ/manageiq-providers-redfish@morphy
+  - TEST_REPO=ManageIQ/manageiq-providers-scvmm@morphy
+  - TEST_REPO=ManageIQ/manageiq-providers-vmware@morphy
+  - TEST_REPO=ManageIQ/manageiq-schema@morphy
+  - TEST_REPO=agrare/manageiq-ui-classic@morphy_fix_generic_feature_button_with_disable
+  - TEST_REPO=ManageIQ/manageiq-ui-service@morphy
+  - TEST_REPO=ManageIQ/manageiq-v2v@morphy
