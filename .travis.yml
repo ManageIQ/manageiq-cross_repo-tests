@@ -1,3 +1,4 @@
+---
 language: ruby
 dist: bionic
 rvm:
@@ -18,6 +19,13 @@ branches:
   - master
 env:
   global:
-  - REPOS=
+  - REPOS=ManageIQ/manageiq#21515,ManageIQ/manageiq-api#1085,ManageIQ/manageiq-automation_engine#485,ManageIQ/manageiq-content#693,ManageIQ/manageiq-providers-openstack#747,ManageIQ/manageiq-providers-ovirt#574,ManageIQ/manageiq-providers-vmware#757,ManageIQ/manageiq-ui-classic#7924
   matrix:
-  - TEST_REPO=manageiq
+  - TEST_REPO=ManageIQ/manageiq#21515
+  - TEST_REPO=ManageIQ/manageiq-api#1085
+  - TEST_REPO=ManageIQ/manageiq-automation_engine#485
+  - TEST_REPO=ManageIQ/manageiq-content#693
+  - TEST_REPO=ManageIQ/manageiq-providers-openstack#747
+  - TEST_REPO=ManageIQ/manageiq-providers-ovirt#574
+  - TEST_REPO=ManageIQ/manageiq-providers-vmware#757
+  - TEST_REPO=ManageIQ/manageiq-ui-classic#7924
