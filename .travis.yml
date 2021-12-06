@@ -1,3 +1,4 @@
+---
 language: ruby
 dist: bionic
 rvm:
@@ -18,6 +19,7 @@ branches:
   - master
 env:
   global:
-  - REPOS=
+  - REPOS=ManageIQ/manageiq#21596,ManageIQ/manageiq-providers-amazon#729
   matrix:
-  - TEST_REPO=manageiq
+  - TEST_REPO=ManageIQ/manageiq#21596
+  - TEST_REPO=ManageIQ/manageiq-providers-amazon#729
