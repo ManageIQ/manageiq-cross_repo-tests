@@ -1,3 +1,4 @@
+---
 language: ruby
 dist: bionic
 rvm:
@@ -18,6 +19,16 @@ branches:
   - master
 env:
   global:
-  - REPOS=
+  - REPOS=ManageIQ/manageiq#21573,ManageIQ/manageiq-providers-autosde#110,ManageIQ/manageiq-providers-foreman#94,ManageIQ/manageiq-providers-ibm_cloud#306,ManageIQ/manageiq-providers-kubernetes#454,ManageIQ/manageiq-providers-kubevirt#192,ManageIQ/manageiq-providers-nsxt#50,ManageIQ/manageiq-providers-nuage#257,ManageIQ/manageiq-providers-openshift#217
   matrix:
-  - TEST_REPO=manageiq
+  - TEST_REPO=ManageIQ/manageiq#21573
+  - TEST_REPO=ManageIQ/manageiq-api
+  - TEST_REPO=ManageIQ/manageiq-providers-autosde#110
+  - TEST_REPO=ManageIQ/manageiq-providers-foreman#94
+  - TEST_REPO=ManageIQ/manageiq-providers-ibm_cloud#306
+  - TEST_REPO=ManageIQ/manageiq-providers-kubernetes#454
+  - TEST_REPO=ManageIQ/manageiq-providers-kubevirt#192
+  - TEST_REPO=ManageIQ/manageiq-providers-nsxt#50
+  - TEST_REPO=ManageIQ/manageiq-providers-nuage#257
+  - TEST_REPO=ManageIQ/manageiq-providers-openshift#217
+  - TEST_REPO=ManageIQ/manageiq-ui-classic
