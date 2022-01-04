@@ -1,3 +1,4 @@
+---
 language: ruby
 dist: bionic
 rvm:
@@ -18,6 +19,8 @@ branches:
   - master
 env:
   global:
-  - REPOS=
+  - REPOS=ManageIQ/manageiq-providers-openstack#762
   matrix:
-  - TEST_REPO=manageiq
+  - TEST_REPO=ManageIQ/manageiq-providers-ibm_cic
+  - TEST_REPO=ManageIQ/manageiq-providers-ibm_power_vc
+  - TEST_REPO=ManageIQ/manageiq-providers-openstack#762
