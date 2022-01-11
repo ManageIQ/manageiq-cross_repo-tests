@@ -2,7 +2,7 @@
 language: ruby
 dist: bionic
 rvm:
-- 2.6.6
+- 3.0.3
 cache:
   directories:
   - vendor/bundle
@@ -24,10 +24,7 @@ env:
   - TEST_REPO=ManageIQ/manageiq#21531
   - TEST_REPO=ManageIQ/manageiq-api
   - TEST_REPO=ManageIQ/manageiq-automation_engine
-  - TEST_REPO=ManageIQ/manageiq-consumption
-  - TEST_REPO=ManageIQ/manageiq-content
-  - TEST_REPO=ManageIQ/manageiq-decorators
   - TEST_REPO=ManageIQ/manageiq-gems-pending
   - TEST_REPO=ManageIQ/manageiq-schema
   - TEST_REPO=ManageIQ/manageiq-ui-classic
-  - TEST_REPO=ManageIQ/manageiq-ui-service
+  
