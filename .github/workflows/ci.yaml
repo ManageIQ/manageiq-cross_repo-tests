@@ -3,8 +3,8 @@ name: Cross Repo Tests
 on: [pull_request]
 
 jobs:
-  manageiq:
-    uses: ManageIQ/manageiq-cross_repo/.github/workflows/manageiq_cross_repo.yaml@master
+  cross-repo:
+    uses: agrare/manageiq-cross_repo/.github/workflows/manageiq_cross_repo.yaml@cross_repo_test_repos
     with:
-      test-repo: ManageIQ/manageiq@master
-      repos: ManageIQ/manageiq@master
+      test-repos: '["ManageIQ/manageiq#21652", "ManageIQ/manageiq-providers-amazon", "manageiq-providers-ansible_tower", "manageiq-providers-autosde", "manageiq-providers-azure", "manageiq-providers-azure_stack", "manageiq-providers-foreman", "manageiq-providers-google", "manageiq-providers-ibm_cic", "manageiq-providers-ibm_cloud", "manageiq-providers-ibm_power_hmc", "manageiq-providers-ibm_power_vc", "manageiq-providers-ibm_terraform", "manageiq-providers-kubernetes", "manageiq-providers-kubevirt", "manageiq-providers-lenovo", "manageiq-providers-nsxt", "manageiq-providers-nuage", "manageiq-providers-openshift", "manageiq-providers-openstack", "manageiq-providers-oracle_cloud", "manageiq-providers-ovirt", "manageiq-providers-redfish", "manageiq-providers-scvmm", "manageiq-providers-vmware"]'
+      repos: ManageIQ/manageiq#21652,ManageIQ/inventory_refresh#103
