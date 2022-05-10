@@ -8,5 +8,5 @@ jobs:
   cross-repo:
     uses: ManageIQ/manageiq-cross_repo/.github/workflows/manageiq_cross_repo.yaml@master
     with:
-      test-repos: '["ManageIQ/manageiq@master"]'
-      repos: ManageIQ/manageiq@master
+      test-repos: '["agrare/manageiq@najdorf_add_cisco_intersight_provider", "agrare/manageiq-providers-cisco_intersight@najdorf"]'
+      repos: agrare/manageiq@najdorf_add_cisco_intersight_provider,agrare/manageiq-providers-cisco_intersight@najdorf
