@@ -6,7 +6,7 @@ on:
 
 jobs:
   cross-repo:
-    uses: ManageIQ/manageiq-cross_repo/.github/workflows/manageiq_cross_repo.yaml@master
+    uses: agrare/manageiq-cross_repo/.github/workflows/manageiq_cross_repo.yaml@remove_bundle_path
     with:
-      test-repos: '["ManageIQ/manageiq@master"]'
-      repos: ManageIQ/manageiq@master
+      test-repos: '["ManageIQ/manageiq@master", "ManageIQ/manageiq-ui-classic#8373"]'
+      repos: ManageIQ/manageiq@master,ManageIQ/manageiq-ui-classic#8373
