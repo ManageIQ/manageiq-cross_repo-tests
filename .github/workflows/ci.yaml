@@ -6,7 +6,7 @@ on:
 
 jobs:
   cross-repo:
-    uses: ManageIQ/manageiq-cross_repo/.github/workflows/manageiq_cross_repo.yaml@master
+    uses: agrare/manageiq-cross_repo/.github/workflows/manageiq_cross_repo.yaml@skip_override_for_test_repo
     with:
-      test-repos: '["ManageIQ/manageiq@master"]'
-      repos: ManageIQ/manageiq@master
+      test-repos: '["ManageIQ/manageiq-ui-classic@2d631775d9905b293c972c3a91acb39115cd2701"]'
+      repos: ManageIQ/manageiq@0a1c16529c96eb5367ed311e08fcd881f94cc818,ManageIQ/manageiq-ui-classic@2d631775d9905b293c972c3a91acb39115cd2701
