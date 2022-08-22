@@ -6,7 +6,7 @@ on:
 
 jobs:
   cross-repo:
-    uses: ManageIQ/manageiq-cross_repo/.github/workflows/manageiq_cross_repo.yaml@master
+    uses: agrare/manageiq-cross_repo/.github/workflows/manageiq_cross_repo.yaml@pass_github_actions_default_env_vars
     with:
-      test-repos: '["ManageIQ/manageiq@master"]'
-      repos: ManageIQ/manageiq@master
+      test-repos: '["ManageIQ/manageiq-providers-autosde#168"]'
+      repos: agrare/manageiq@oparin_dont_setup_gemfile_lock_plugins,ManageIQ/manageiq-providers-autosde#168
