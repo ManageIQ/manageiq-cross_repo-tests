@@ -24,3 +24,4 @@ jobs:
         "ManageIQ/manageiq-providers-vmware", "ManageIQ/manageiq-schema", "ManageIQ/manageiq-ui-classic",
         "ManageIQ/manageiq-ui-service"]'
       repos: ManageIQ/manageiq#21531
+      ruby-version: '["3.0", "2.7"]'
