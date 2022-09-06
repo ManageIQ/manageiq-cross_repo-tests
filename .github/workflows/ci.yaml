@@ -1,12 +1,13 @@
 ---
 name: Cross Repo
-
 on:
 - pull_request
-
 jobs:
   cross-repo:
     uses: ManageIQ/manageiq-cross_repo/.github/workflows/manageiq_cross_repo.yaml@master
     with:
-      test-repos: '["ManageIQ/manageiq@master"]'
-      repos: ManageIQ/manageiq@master
+      test-repos: '["ManageIQ/manageiq#22100", "ManageIQ/manageiq-api#1180", "ManageIQ/manageiq-providers-amazon#790",
+        "ManageIQ/manageiq-providers-azure#519", "ManageIQ/manageiq-providers-google#235",
+        "ManageIQ/manageiq-providers-nsxt#76", "ManageIQ/manageiq-providers-openstack#823",
+        "ManageIQ/manageiq-providers-vmware#819", "ManageIQ/manageiq-ui-classic#8436"]'
+      repos: ManageIQ/manageiq#22100,ManageIQ/manageiq-api#1180,ManageIQ/manageiq-providers-amazon#790,ManageIQ/manageiq-providers-azure#519,ManageIQ/manageiq-providers-google#235,ManageIQ/manageiq-providers-nsxt#76,ManageIQ/manageiq-providers-openstack#823,ManageIQ/manageiq-providers-vmware#819,ManageIQ/manageiq-ui-classic#8436
