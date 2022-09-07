@@ -8,4 +8,4 @@ jobs:
     with:
       test-repos: '["ManageIQ/manageiq-providers-azure_stack#86"]'
       repos: ManageIQ/manageiq#21531,ManageIQ/manageiq-providers-azure_stack#86
-     ruby-version: '["3.0", "2.7"]'
+      ruby-version: '["3.0", "2.7"]'
