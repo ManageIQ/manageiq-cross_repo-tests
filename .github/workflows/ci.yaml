@@ -6,7 +6,7 @@ jobs:
   cross-repo:
     uses: ManageIQ/manageiq-cross_repo/.github/workflows/manageiq_cross_repo.yaml@master
     with:
-      test-repos: '["ManageIQ/manageiq#21531", "ManageIQ/manageiq-api", "ManageIQ/manageiq-automation_engine",
+      test-repos: '["ManageIQ/manageiq#21531", "ManageIQ/manageiq-api", "ManageIQ/manageiq-automation_engine#509",
         "ManageIQ/manageiq-consumption", "ManageIQ/manageiq-content", "ManageIQ/manageiq-decorators",
         "ManageIQ/manageiq-gems-pending", "ManageIQ/manageiq-providers-amazon", "ManageIQ/manageiq-providers-ansible_tower",
         "ManageIQ/manageiq-providers-autosde", "ManageIQ/manageiq-providers-awx",
@@ -21,7 +21,7 @@ jobs:
         "ManageIQ/manageiq-providers-openstack", "ManageIQ/manageiq-providers-oracle_cloud",
         "ManageIQ/manageiq-providers-ovirt", "ManageIQ/manageiq-providers-red_hat_virtualization",
         "ManageIQ/manageiq-providers-redfish", "ManageIQ/manageiq-providers-scvmm",
-        "ManageIQ/manageiq-providers-vmware#822", "ManageIQ/manageiq-schema#662", "ManageIQ/manageiq-ui-classic#8443",
+        "ManageIQ/manageiq-providers-vmware", "ManageIQ/manageiq-schema#662", "ManageIQ/manageiq-ui-classic#8443",
         "ManageIQ/manageiq-ui-service"]'
       repos: ManageIQ/manageiq#21531
       ruby-version: '["3.0", "2.7"]'
