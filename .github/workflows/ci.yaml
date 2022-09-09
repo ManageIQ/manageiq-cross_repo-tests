@@ -21,7 +21,7 @@ jobs:
         "ManageIQ/manageiq-providers-openstack", "ManageIQ/manageiq-providers-oracle_cloud",
         "ManageIQ/manageiq-providers-ovirt", "ManageIQ/manageiq-providers-red_hat_virtualization",
         "ManageIQ/manageiq-providers-redfish", "ManageIQ/manageiq-providers-scvmm",
-        "ManageIQ/manageiq-providers-vmware", "ManageIQ/manageiq-schema#662", "ManageIQ/manageiq-ui-classic#8443",
+        "ManageIQ/manageiq-providers-vmware", "ManageIQ/manageiq-schema", "ManageIQ/manageiq-ui-classic",
         "ManageIQ/manageiq-ui-service"]'
       repos: ManageIQ/manageiq#21531
       ruby-version: '["3.0", "2.7"]'
