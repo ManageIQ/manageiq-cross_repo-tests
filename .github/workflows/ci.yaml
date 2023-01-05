@@ -1,12 +1,17 @@
 ---
 name: Cross Repo
-
 on:
 - pull_request
-
 jobs:
   cross-repo:
     uses: ManageIQ/manageiq-cross_repo/.github/workflows/manageiq_cross_repo.yaml@master
     with:
-      test-repos: '["ManageIQ/manageiq@master"]'
-      repos: ManageIQ/manageiq@master
+      test-repos: '["ManageIQ/manageiq#22288", "ManageIQ/manageiq-providers-amazon#803",
+        "ManageIQ/manageiq-providers-azure#529", "ManageIQ/manageiq-providers-azure_stack#90",
+        "ManageIQ/manageiq-providers-cisco_intersight#86", "ManageIQ/manageiq-providers-dummy_provider#51",
+        "ManageIQ/manageiq-providers-google#241", "ManageIQ/manageiq-providers-ibm_cic#27",
+        "ManageIQ/manageiq-providers-ibm_cloud#442", "ManageIQ/manageiq-providers-ibm_power_hmc#130",
+        "ManageIQ/manageiq-providers-kubernetes#480", "ManageIQ/manageiq-providers-openstack#834",
+        "ManageIQ/manageiq-providers-oracle_cloud#83", "ManageIQ/manageiq-providers-ovirt#627",
+        "ManageIQ/manageiq-providers-vmware#846"]'
+      repos: ManageIQ/manageiq#22288,ManageIQ/manageiq-providers-amazon#803,ManageIQ/manageiq-providers-azure#529,ManageIQ/manageiq-providers-azure_stack#90,ManageIQ/manageiq-providers-cisco_intersight#86,ManageIQ/manageiq-providers-dummy_provider#51,ManageIQ/manageiq-providers-google#241,ManageIQ/manageiq-providers-ibm_cic#27,ManageIQ/manageiq-providers-ibm_cloud#442,ManageIQ/manageiq-providers-ibm_power_hmc#130,ManageIQ/manageiq-providers-kubernetes#480,ManageIQ/manageiq-providers-openstack#834,ManageIQ/manageiq-providers-oracle_cloud#83,ManageIQ/manageiq-providers-ovirt#627,ManageIQ/manageiq-providers-vmware#846
