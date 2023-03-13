@@ -21,5 +21,5 @@ jobs:
         "ManageIQ/manageiq-providers-openstack", "ManageIQ/manageiq-providers-oracle_cloud",
         "ManageIQ/manageiq-providers-ovirt", "ManageIQ/manageiq-providers-red_hat_virtualization",
         "ManageIQ/manageiq-providers-redfish#172", "ManageIQ/manageiq-providers-vmware",
-        "ManageIQ/manageiq-schema", "ManageIQ/manageiq-ui-classic#8689", "ManageIQ/manageiq-ui-service#1836"]'
-      repos: ManageIQ/manageiq-cross_repo#97,ManageIQ/manageiq-providers-lenovo#384,ManageIQ/manageiq-providers-nsxt#83,ManageIQ/manageiq-providers-nuage#287,ManageIQ/manageiq-providers-redfish#172,ManageIQ/manageiq-ui-classic#8689,ManageIQ/manageiq-ui-service#1836
+        "ManageIQ/manageiq-schema", "ManageIQ/manageiq-ui-classic#8689"]'
+      repos: ManageIQ/manageiq-providers-lenovo#384,ManageIQ/manageiq-providers-nsxt#83,ManageIQ/manageiq-providers-nuage#287,ManageIQ/manageiq-providers-redfish#172,ManageIQ/manageiq-ui-classic#8689
