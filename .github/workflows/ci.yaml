@@ -23,5 +23,5 @@ jobs:
         "ManageIQ/manageiq-providers-redfish", "ManageIQ/manageiq-providers-vmware",
         "ManageIQ/manageiq-providers-workflows", "ManageIQ/manageiq-schema#707", "ManageIQ/manageiq-ui-classic",
         "ManageIQ/manageiq-ui-service"]'
-      repos: '["ManageIQ/manageiq#22698", "ManageIQ/manageiq-schema#707"]'
+      repos: ManageIQ/manageiq#22698,ManageIQ/manageiq-schema#707
       ruby-version: '["2.7", "3.0","3.1"]'
