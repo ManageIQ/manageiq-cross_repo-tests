@@ -24,4 +24,4 @@ jobs:
         "ManageIQ/manageiq-providers-workflows", "ManageIQ/manageiq-schema", "ManageIQ/manageiq-ui-classic",
         "ManageIQ/manageiq-ui-service"]'
       repos: ManageIQ/manageiq#22698
-      ruby-version: '["3.0","3.1"]'
+      ruby-version: '["3.0"]'
