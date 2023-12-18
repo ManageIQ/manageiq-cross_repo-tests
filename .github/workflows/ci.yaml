@@ -20,7 +20,7 @@ jobs:
         "ManageIQ/manageiq-providers-nuage", "ManageIQ/manageiq-providers-openshift",
         "ManageIQ/manageiq-providers-openstack", "ManageIQ/manageiq-providers-oracle_cloud",
         "ManageIQ/manageiq-providers-ovirt", "ManageIQ/manageiq-providers-red_hat_virtualization",
-        "ManageIQ/manageiq-providers-redfish", "ManageIQ/manageiq-providers-vmware",
+        "ManageIQ/manageiq-providers-redfish", "ManageIQ/manageiq-providers-vmware#892",
         "ManageIQ/manageiq-providers-workflows", "ManageIQ/manageiq-schema", "ManageIQ/manageiq-ui-classic",
         "ManageIQ/manageiq-ui-service"]'
       repos: ManageIQ/manageiq#22698
