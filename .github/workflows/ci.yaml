@@ -8,5 +8,5 @@ jobs:
   cross-repo:
     uses: ManageIQ/manageiq-cross_repo/.github/workflows/manageiq_cross_repo.yaml@master
     with:
-      test-repos: '["ManageIQ/manageiq@master"]'
-      repos: ManageIQ/manageiq@master
+      test-repos: '["ManageIQ/manageiq-ui-classic@11ff425c614841584fd958725bfdba51d2c6f821"]'
+      repos: ManageIQ/manageiq@4b80ae2fdc7332ec060be37e7fd95848af3a51b2
