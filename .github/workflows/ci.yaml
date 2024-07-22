@@ -15,12 +15,12 @@ jobs:
         "ManageIQ/manageiq-providers-foreman", "ManageIQ/manageiq-providers-google",
         "ManageIQ/manageiq-providers-ibm_cic", "ManageIQ/manageiq-providers-ibm_cloud",
         "ManageIQ/manageiq-providers-ibm_power_hmc", "ManageIQ/manageiq-providers-ibm_power_vc",
-        "ManageIQ/manageiq-providers-ibm_terraform", "ManageIQ/manageiq-providers-kubernetes#531",
+        "ManageIQ/manageiq-providers-ibm_terraform", "ManageIQ/manageiq-providers-kubernetes",
         "ManageIQ/manageiq-providers-kubevirt", "ManageIQ/manageiq-providers-lenovo",
         "ManageIQ/manageiq-providers-nsxt", "ManageIQ/manageiq-providers-nuage", "ManageIQ/manageiq-providers-openshift",
-        "ManageIQ/manageiq-providers-openstack#885", "ManageIQ/manageiq-providers-oracle_cloud",
+        "ManageIQ/manageiq-providers-openstack", "ManageIQ/manageiq-providers-oracle_cloud",
         "ManageIQ/manageiq-providers-ovirt", "ManageIQ/manageiq-providers-red_hat_virtualization",
         "ManageIQ/manageiq-providers-redfish", "ManageIQ/manageiq-providers-vmware",
-        "ManageIQ/manageiq-providers-workflows", "ManageIQ/manageiq-schema", "ManageIQ/manageiq-ui-classic#9215",
+        "ManageIQ/manageiq-providers-workflows", "ManageIQ/manageiq-schema", "ManageIQ/manageiq-ui-classic",
         "ManageIQ/manageiq-ui-service"]'
-      repos: ManageIQ/manageiq#22873,ManageIQ/manageiq-ui-classic#9215
+      repos: ManageIQ/manageiq#22873
