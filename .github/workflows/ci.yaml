@@ -6,7 +6,7 @@ jobs:
   cross-repo:
     uses: ManageIQ/manageiq-cross_repo/.github/workflows/manageiq_cross_repo.yaml@master
     with:
-      test-repos: '["ManageIQ/manageiq#22873", "ManageIQ/manageiq-api#1263", "ManageIQ/manageiq-automation_engine",
+      test-repos: '["ManageIQ/manageiq#22873", "ManageIQ/manageiq-api", "ManageIQ/manageiq-automation_engine",
         "ManageIQ/manageiq-consumption", "ManageIQ/manageiq-content", "ManageIQ/manageiq-decorators",
         "ManageIQ/manageiq-gems-pending", "ManageIQ/manageiq-providers-amazon", "ManageIQ/manageiq-providers-ansible_tower",
         "ManageIQ/manageiq-providers-autosde", "ManageIQ/manageiq-providers-awx",
