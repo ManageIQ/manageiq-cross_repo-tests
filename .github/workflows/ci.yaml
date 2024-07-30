@@ -1,12 +1,26 @@
 ---
 name: Cross Repo
-
 on:
 - pull_request
-
 jobs:
   cross-repo:
     uses: ManageIQ/manageiq-cross_repo/.github/workflows/manageiq_cross_repo.yaml@master
     with:
-      test-repos: '["ManageIQ/manageiq@master"]'
-      repos: ManageIQ/manageiq@master
+      test-repos: '["ManageIQ/manageiq#22923", "ManageIQ/manageiq-api", "ManageIQ/manageiq-automation_engine",
+        "ManageIQ/manageiq-consumption", "ManageIQ/manageiq-content", "ManageIQ/manageiq-decorators",
+        "ManageIQ/manageiq-gems-pending", "ManageIQ/manageiq-providers-amazon", "ManageIQ/manageiq-providers-ansible_tower",
+        "ManageIQ/manageiq-providers-autosde", "ManageIQ/manageiq-providers-awx",
+        "ManageIQ/manageiq-providers-azure", "ManageIQ/manageiq-providers-azure_stack",
+        "ManageIQ/manageiq-providers-cisco_intersight", "ManageIQ/manageiq-providers-embedded_terraform",
+        "ManageIQ/manageiq-providers-foreman", "ManageIQ/manageiq-providers-google",
+        "ManageIQ/manageiq-providers-ibm_cic", "ManageIQ/manageiq-providers-ibm_cloud",
+        "ManageIQ/manageiq-providers-ibm_power_hmc", "ManageIQ/manageiq-providers-ibm_power_vc",
+        "ManageIQ/manageiq-providers-ibm_terraform", "ManageIQ/manageiq-providers-kubernetes",
+        "ManageIQ/manageiq-providers-kubevirt", "ManageIQ/manageiq-providers-lenovo",
+        "ManageIQ/manageiq-providers-nsxt", "ManageIQ/manageiq-providers-nuage", "ManageIQ/manageiq-providers-openshift",
+        "ManageIQ/manageiq-providers-openstack", "ManageIQ/manageiq-providers-oracle_cloud",
+        "ManageIQ/manageiq-providers-ovirt", "ManageIQ/manageiq-providers-red_hat_virtualization",
+        "ManageIQ/manageiq-providers-redfish", "ManageIQ/manageiq-providers-vmware",
+        "ManageIQ/manageiq-providers-workflows", "ManageIQ/manageiq-schema#721", "ManageIQ/manageiq-ui-classic",
+        "ManageIQ/manageiq-ui-service"]'
+      repos: ManageIQ/manageiq#22923,ManageIQ/manageiq-schema#721
