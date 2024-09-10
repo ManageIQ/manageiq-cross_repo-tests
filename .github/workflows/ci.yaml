@@ -6,5 +6,5 @@ jobs:
   cross-repo:
     uses: ManageIQ/manageiq-cross_repo/.github/workflows/manageiq_cross_repo.yaml@master
     with:
-      test-repos: '["ManageIQ/manageiq-providers-ovirt#676"]'
-      repos: ManageIQ/manageiq-providers-ovirt#676,ManageIQ/ovirt#118
+      test-repos: '["ManageIQ/manageiq-providers-ovirt#676","ManageIQ/manageiq-providers-red_hat_virtualization"]'
+      repos: ManageIQ/manageiq-providers-ovirt#676
