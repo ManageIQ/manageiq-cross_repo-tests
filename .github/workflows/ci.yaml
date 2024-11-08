@@ -23,4 +23,4 @@ jobs:
         "ManageIQ/manageiq-providers-redfish", "ManageIQ/manageiq-providers-vmware#926",
         "ManageIQ/manageiq-providers-workflows", "ManageIQ/manageiq-schema", "ManageIQ/manageiq-ui-classic#9307",
         "ManageIQ/manageiq-ui-service", "ManageIQ/vmware_web_service#141"]'
-      repos: ManageIQ/manageiq#23261,ManageIQ/manageiq-automation_engine#562,ManageIQ/manageiq-gems-pending#596,ManageIQ/manageiq-providers-ovirt#680,ManageIQ/manageiq-providers-vmware#926,ManageIQ/manageiq-ui-classic#9307,ManageIQ/vmware_web_service#141
+      repos: ManageIQ/manageiq#23261,ManageIQ/vmware_web_service#141
