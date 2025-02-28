@@ -1,0 +1,58 @@
+#!/usr/bin/env ruby
+
+require "bundler/inline"
+gemfile do
+  source "https://rubygems.org"
+  gem "colorize"
+  gem "octokit"
+  gem "optimist"
+end
+
+opts = Optimist.options do
+  opt :dry_run, "Execute without making changes", :default => false
+end
+
+def close_pull_request(repo, number, dry_run:, **_)
+  if dry_run
+    puts "** dry_run: github.close_pull_request(#{repo.inspect}, #{number.inspect})".light_black
+  else
+    github.close_pull_request(repo, number)
+  end
+end
+
+def delete_branch(repo, branch, dry_run:, **_)
+  if dry_run
+    puts "** dry_run: github.delete_branch(#{repo.inspect}, #{branch.inspect})".light_black
+  else
+    github.delete_branch(repo, branch)
+  end
+end
+
+def github
+  @github ||= Octokit::Client.new(
+    :access_token  => ENV.fetch("GITHUB_API_TOKEN"),
+    :auto_paginate => true
+  )
+end
+
+CRT_REPO = "ManageIQ/manageiq-cross_repo-tests".freeze
+
+github.pull_requests(CRT_REPO, :state => "open").each do |crt_pr|
+  target = crt_pr.title.split(" ").last
+  next unless target.match?(%r{^ManageIQ/[^#]+#\d+$})
+
+  repo, number = target.split("#")
+  pr = github.pull_request(repo, number)
+
+  crt_pr_slug = "#{CRT_REPO}##{crt_pr.number}"
+  pr_slug = "#{repo}##{number}"
+
+  if pr.state == "closed"
+    puts "Closing #{crt_pr_slug} since #{pr_slug} is closed"
+    close_pull_request(CRT_REPO, crt_pr.number, **opts)
+    puts "Deleting branch #{crt_pr.head.ref}"
+    delete_branch(CRT_REPO, crt_pr.head.ref, **opts)
+  else
+    puts "Skipping #{crt_pr_slug} since #{pr_slug} is open"
+  end
+end
