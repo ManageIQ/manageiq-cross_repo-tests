@@ -24,7 +24,11 @@ def delete_branch(repo, branch, dry_run:, **_)
   if dry_run
     puts "** dry_run: github.delete_branch(#{repo.inspect}, #{branch.inspect})".light_black
   else
-    github.delete_branch(repo, branch)
+    begin
+      github.delete_branch(repo, branch)
+    rescue Octokit::UnprocessableEntity
+      # Ignore since it's already deleted
+    end
   end
 end
 
