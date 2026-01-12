@@ -1,12 +1,28 @@
 ---
 name: Cross Repo
-
 on:
 - pull_request
-
 jobs:
   cross-repo:
     uses: ManageIQ/manageiq-cross_repo/.github/workflows/manageiq_cross_repo.yaml@master
     with:
-      test-repos: '["ManageIQ/manageiq@master"]'
-      repos: ManageIQ/manageiq@master
+      test-repos: '["ManageIQ/manageiq#22075", "ManageIQ/manageiq-api#1308", "ManageIQ/manageiq-automation_engine#583",
+        "ManageIQ/manageiq-consumption#234", "ManageIQ/manageiq-content#779", "ManageIQ/manageiq-decorators#121",
+        "ManageIQ/manageiq-providers-amazon#941", "ManageIQ/manageiq-providers-ansible_tower#334",
+        "ManageIQ/manageiq-providers-autosde#265", "ManageIQ/manageiq-providers-awx#54",
+        "ManageIQ/manageiq-providers-azure#578", "ManageIQ/manageiq-providers-azure_stack#125",
+        "ManageIQ/manageiq-providers-cisco_intersight#147", "ManageIQ/manageiq-providers-dummy_provider#80",
+        "ManageIQ/manageiq-providers-embedded_terraform#112", "ManageIQ/manageiq-providers-foreman#147",
+        "ManageIQ/manageiq-providers-google#288", "ManageIQ/manageiq-providers-ibm_cic#66",
+        "ManageIQ/manageiq-providers-ibm_cloud#549", "ManageIQ/manageiq-providers-ibm_power_hmc#179",
+        "ManageIQ/manageiq-providers-ibm_power_vc#146", "ManageIQ/manageiq-providers-ibm_terraform#124",
+        "ManageIQ/manageiq-providers-kubernetes#561", "ManageIQ/manageiq-providers-kubevirt#316",
+        "ManageIQ/manageiq-providers-lenovo#442", "ManageIQ/manageiq-providers-nsxt#163",
+        "ManageIQ/manageiq-providers-nuage#349", "ManageIQ/manageiq-providers-nutanix#40",
+        "ManageIQ/manageiq-providers-openshift#296", "ManageIQ/manageiq-providers-openstack#934",
+        "ManageIQ/manageiq-providers-oracle_cloud#122", "ManageIQ/manageiq-providers-ovirt#702",
+        "ManageIQ/manageiq-providers-red_hat_virtualization#68", "ManageIQ/manageiq-providers-redfish#233",
+        "ManageIQ/manageiq-providers-scvmm#224", "ManageIQ/manageiq-providers-terraform_enterprise#29",
+        "ManageIQ/manageiq-providers-vmware#959", "ManageIQ/manageiq-providers-workflows#153",
+        "ManageIQ/manageiq-ui-classic#9776"]'
+      repos: ManageIQ/manageiq#22075,ManageIQ/manageiq-api#1308,ManageIQ/manageiq-automation_engine#583,ManageIQ/manageiq-consumption#234,ManageIQ/manageiq-content#779,ManageIQ/manageiq-decorators#121,ManageIQ/manageiq-providers-amazon#941,ManageIQ/manageiq-providers-ansible_tower#334,ManageIQ/manageiq-providers-autosde#265,ManageIQ/manageiq-providers-awx#54,ManageIQ/manageiq-providers-azure#578,ManageIQ/manageiq-providers-azure_stack#125,ManageIQ/manageiq-providers-cisco_intersight#147,ManageIQ/manageiq-providers-dummy_provider#80,ManageIQ/manageiq-providers-embedded_terraform#112,ManageIQ/manageiq-providers-foreman#147,ManageIQ/manageiq-providers-google#288,ManageIQ/manageiq-providers-ibm_cic#66,ManageIQ/manageiq-providers-ibm_cloud#549,ManageIQ/manageiq-providers-ibm_power_hmc#179,ManageIQ/manageiq-providers-ibm_power_vc#146,ManageIQ/manageiq-providers-ibm_terraform#124,ManageIQ/manageiq-providers-kubernetes#561,ManageIQ/manageiq-providers-kubevirt#316,ManageIQ/manageiq-providers-lenovo#442,ManageIQ/manageiq-providers-nsxt#163,ManageIQ/manageiq-providers-nuage#349,ManageIQ/manageiq-providers-nutanix#40,ManageIQ/manageiq-providers-openshift#296,ManageIQ/manageiq-providers-openstack#934,ManageIQ/manageiq-providers-oracle_cloud#122,ManageIQ/manageiq-providers-ovirt#702,ManageIQ/manageiq-providers-red_hat_virtualization#68,ManageIQ/manageiq-providers-redfish#233,ManageIQ/manageiq-providers-scvmm#224,ManageIQ/manageiq-providers-terraform_enterprise#29,ManageIQ/manageiq-providers-vmware#959,ManageIQ/manageiq-providers-workflows#153,ManageIQ/manageiq-ui-classic#9776
