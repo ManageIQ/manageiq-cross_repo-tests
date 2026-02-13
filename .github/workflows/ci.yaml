@@ -14,7 +14,7 @@ jobs:
         - spec:jest
         - spec:routes
         - spec:security
-    uses: ManageIQ/manageiq-cross_repo/.github/workflows/manageiq_cross_repo.yaml@master
+    uses: agrare/manageiq-cross_repo/.github/workflows/manageiq_cross_repo.yaml@add_test_suite_concurrency
     with:
       test-repos: '["ManageIQ/manageiq-providers-lenovo#443", "ManageIQ/manageiq-providers-nsxt#167",
         "ManageIQ/manageiq-ui-classic#9799"]'
