@@ -1,12 +1,11 @@
 ---
 name: Cross Repo
-
 on:
 - pull_request
-
 jobs:
   cross-repo:
     uses: ManageIQ/manageiq-cross_repo/.github/workflows/manageiq_cross_repo.yaml@master
     with:
-      test-repos: '["ManageIQ/manageiq@master"]'
-      repos: ManageIQ/manageiq@master
+      test-repos: '["ManageIQ/manageiq-providers-embedded_terraform#124", "ManageIQ/manageiq-providers-google",
+        "ManageIQ/manageiq-providers-ibm_cloud", "ManageIQ/manageiq-providers-oracle_cloud"]'
+      repos: IBM/ruby-sdk-core#47,ManageIQ/manageiq-providers-embedded_terraform#124,agrare/oci-ruby-sdk@bump_jwt
