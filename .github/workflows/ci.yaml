@@ -8,9 +8,18 @@ jobs:
   cross-repo:
     strategy:
       fail-fast: false
+      matrix:
+        test-suite:
+        - spec
+        - spec:compile
+        - spec:javascript
+        - spec:jest
+        - spec:routes
+        - spec:security
+
     uses: ManageIQ/manageiq-cross_repo/.github/workflows/manageiq_cross_repo.yaml@v2.5.0
     with:
       test-repos: '["ManageIQ/manageiq-providers-ibm_cloud#573", "ManageIQ/manageiq-providers-ibm_power_vc#163",
         "ManageIQ/manageiq-ui-classic#10219"]'
       repos: ManageIQ/manageiq-providers-ibm_cloud#573,ManageIQ/manageiq-providers-ibm_power_vc#163,ManageIQ/manageiq-ui-classic#10219
-      test-suite: "spec:compile"
+      test-suite: ${{ matrix.test-suite }}
