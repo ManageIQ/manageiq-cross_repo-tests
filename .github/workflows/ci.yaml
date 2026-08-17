@@ -6,7 +6,11 @@ on:
 
 jobs:
   cross-repo:
-    uses: ManageIQ/manageiq-cross_repo/.github/workflows/manageiq_cross_repo.yaml@v2.5.0
+    strategy:
+      fail-fast: false
+
+    uses: agrare/manageiq-cross_repo/.github/workflows/manageiq_cross_repo.yaml@allow_test_suite_array
     with:
-      test-repos: '["ManageIQ/manageiq@master"]'
-      repos: ManageIQ/manageiq@master
+      test-repos: '["ManageIQ/manageiq-ui-classic#10219"]'
+      repos: ManageIQ/manageiq-providers-ibm_cloud#573,ManageIQ/manageiq-providers-ibm_power_vc#163,ManageIQ/manageiq-ui-classic#10219
+      test-suite: '["spec", "spec:compile", "spec:javascript", "spec:jest", "spec:routes", "spec:security"]'
