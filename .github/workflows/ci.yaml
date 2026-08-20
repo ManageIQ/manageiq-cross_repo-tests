@@ -1,12 +1,29 @@
 ---
 name: Cross Repo
-
 on:
 - pull_request
-
 jobs:
   cross-repo:
-    uses: ManageIQ/manageiq-cross_repo/.github/workflows/manageiq_cross_repo.yaml@v2.5.0
+    uses: ManageIQ/manageiq-cross_repo/.github/workflows/manageiq_cross_repo.yaml@master
     with:
-      test-repos: '["ManageIQ/manageiq@master"]'
-      repos: ManageIQ/manageiq@master
+      test-repos: '["ManageIQ/activerecord-id_regions", "ManageIQ/inventory_refresh",
+        "ManageIQ/manageiq#23947", "ManageIQ/manageiq-api", "ManageIQ/manageiq-api-client",
+        "ManageIQ/manageiq-automation_engine", "ManageIQ/manageiq-consumption", "ManageIQ/manageiq-content",
+        "ManageIQ/manageiq-decorators", "ManageIQ/manageiq-gems-pending", "ManageIQ/manageiq-messaging",
+        "ManageIQ/manageiq-postgres_ha_admin", "ManageIQ/manageiq-providers-amazon",
+        "ManageIQ/manageiq-providers-ansible_tower", "ManageIQ/manageiq-providers-autosde",
+        "ManageIQ/manageiq-providers-awx", "ManageIQ/manageiq-providers-azure", "ManageIQ/manageiq-providers-azure_stack",
+        "ManageIQ/manageiq-providers-cisco_intersight", "ManageIQ/manageiq-providers-embedded_terraform",
+        "ManageIQ/manageiq-providers-foreman", "ManageIQ/manageiq-providers-google",
+        "ManageIQ/manageiq-providers-ibm_cic", "ManageIQ/manageiq-providers-ibm_cloud",
+        "ManageIQ/manageiq-providers-ibm_power_hmc", "ManageIQ/manageiq-providers-ibm_power_vc",
+        "ManageIQ/manageiq-providers-ibm_terraform", "ManageIQ/manageiq-providers-kubernetes",
+        "ManageIQ/manageiq-providers-kubevirt", "ManageIQ/manageiq-providers-lenovo",
+        "ManageIQ/manageiq-providers-nsxt", "ManageIQ/manageiq-providers-nutanix",
+        "ManageIQ/manageiq-providers-openshift", "ManageIQ/manageiq-providers-openstack",
+        "ManageIQ/manageiq-providers-oracle_cloud", "ManageIQ/manageiq-providers-ovirt",
+        "ManageIQ/manageiq-providers-proxmox", "ManageIQ/manageiq-providers-red_hat_virtualization",
+        "ManageIQ/manageiq-providers-redfish", "ManageIQ/manageiq-providers-terraform_enterprise",
+        "ManageIQ/manageiq-providers-vmware", "ManageIQ/manageiq-providers-workflows",
+        "ManageIQ/manageiq-schema#899", "ManageIQ/manageiq-ui-classic#10228", "ManageIQ/manageiq-ui-service"]'
+      repos: ManageIQ/manageiq#23947,ManageIQ/manageiq-schema#899,ManageIQ/manageiq-ui-classic#10228,ManageIQ/activerecord-virtual_attributes#250,ManageIQ/activerecord-id_regions,https://github.com/ManageIQ/manageiq-api-client,https://github.com/ManageIQ/manageiq-postgres_ha_admin
