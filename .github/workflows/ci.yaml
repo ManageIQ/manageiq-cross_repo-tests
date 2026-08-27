@@ -6,7 +6,18 @@ on:
 
 jobs:
   cross-repo:
+    strategy:
+      fail-fast: false
+      matrix:
+        test-suite:
+        - spec
+        - spec:compile
+        - spec:javascript
+        - spec:jest
+        - spec:routes
+
     uses: ManageIQ/manageiq-cross_repo/.github/workflows/manageiq_cross_repo.yaml@v2.5.0
     with:
-      test-repos: '["ManageIQ/manageiq@master"]'
-      repos: ManageIQ/manageiq@master
+      test-repos: '["ManageIQ/manageiq-ui-classic#10252"]'
+      repos: ManageIQ/manageiq-providers-redfish#247
+      test-suite: ${{ matrix.test-suite }}
