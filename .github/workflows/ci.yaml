@@ -1,9 +1,9 @@
 ---
 name: Cross Repo
-
 on:
 - pull_request
-
+permissions:
+  contents: read
 jobs:
   cross-repo:
     uses: ManageIQ/manageiq-cross_repo/.github/workflows/manageiq_cross_repo.yaml@v2.5.0
