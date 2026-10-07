@@ -6,7 +6,8 @@ permissions:
   contents: read
 jobs:
   cross-repo:
-    uses: ManageIQ/manageiq-cross_repo/.github/workflows/manageiq_cross_repo.yaml@v2.5.0
+    uses: ManageIQ/manageiq-cross_repo/.github/workflows/manageiq_cross_repo.yaml@master
     with:
-      test-repos: '["ManageIQ/manageiq@master"]'
-      repos: ManageIQ/manageiq@master
+      test-repos: '["ManageIQ/manageiq-providers-embedded_terraform#124", "ManageIQ/manageiq-providers-google",
+        "ManageIQ/manageiq-providers-ibm_cloud#593", "ManageIQ/manageiq-providers-oracle_cloud"]'
+      repos: ManageIQ/manageiq-providers-embedded_terraform#124,ManageIQ/manageiq-providers-ibm_cloud#593
