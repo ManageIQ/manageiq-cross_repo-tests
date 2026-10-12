@@ -2,6 +2,8 @@
 name: Cross Repo
 on:
 - pull_request
+permissions:
+  contents: read
 jobs:
   cross-repo:
     uses: ManageIQ/manageiq-cross_repo/.github/workflows/manageiq_cross_repo.yaml@master
@@ -24,5 +26,5 @@ jobs:
         "ManageIQ/manageiq-providers-proxmox", "ManageIQ/manageiq-providers-red_hat_virtualization",
         "ManageIQ/manageiq-providers-redfish", "ManageIQ/manageiq-providers-terraform_enterprise",
         "ManageIQ/manageiq-providers-vmware", "ManageIQ/manageiq-providers-workflows",
-        "ManageIQ/manageiq-schema#899", "ManageIQ/manageiq-ui-classic#10228", "ManageIQ/manageiq-ui-service"]'
-      repos: ManageIQ/activerecord-virtual_attributes#250,ManageIQ/manageiq#23947,ManageIQ/manageiq-schema#899,ManageIQ/manageiq-ui-classic#10228
+        "ManageIQ/manageiq-schema", "ManageIQ/manageiq-ui-classic#10228", "ManageIQ/manageiq-ui-service"]'
+      repos: ManageIQ/activerecord-virtual_attributes#250,ManageIQ/manageiq#23947,ManageIQ/manageiq-ui-classic#10228
