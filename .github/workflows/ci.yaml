@@ -8,7 +8,7 @@ jobs:
   cross-repo:
     uses: jrafanie/manageiq-cross_repo/.github/workflows/manageiq_cross_repo.yaml@pin-ubuntu-24-04
     with:
-      test-repos: '["ManageIQ/activerecord-virtual_attributes#250", "ManageIQ/manageiq#23947",
+      test-repos: '["ManageIQ/activerecord-virtual_attributes", "ManageIQ/manageiq#23947",
         "ManageIQ/manageiq-api", "ManageIQ/manageiq-automation_engine", "ManageIQ/manageiq-consumption",
         "ManageIQ/manageiq-content", "ManageIQ/manageiq-decorators", "ManageIQ/manageiq-gems-pending",
         "ManageIQ/manageiq-providers-amazon", "ManageIQ/manageiq-providers-ansible_tower",
@@ -27,4 +27,4 @@ jobs:
         "ManageIQ/manageiq-providers-redfish", "ManageIQ/manageiq-providers-terraform_enterprise",
         "ManageIQ/manageiq-providers-vmware", "ManageIQ/manageiq-providers-workflows",
         "ManageIQ/manageiq-schema", "ManageIQ/manageiq-ui-classic#10228", "ManageIQ/manageiq-ui-service"]'
-      repos: ManageIQ/activerecord-virtual_attributes#250,ManageIQ/manageiq#23947,ManageIQ/manageiq-ui-classic#10228
+      repos: ManageIQ/manageiq#23947,ManageIQ/manageiq-ui-classic#10228
