@@ -6,7 +6,7 @@ permissions:
   contents: read
 jobs:
   cross-repo:
-    uses: ManageIQ/manageiq-cross_repo/.github/workflows/manageiq_cross_repo.yaml@master
+    uses: jrafanie/manageiq-cross_repo/.github/workflows/manageiq_cross_repo.yaml@pin-ubuntu-24-04
     with:
       test-repos: '["ManageIQ/activerecord-virtual_attributes#250", "ManageIQ/manageiq#23947",
         "ManageIQ/manageiq-api", "ManageIQ/manageiq-automation_engine", "ManageIQ/manageiq-consumption",
